@@ -109,41 +109,41 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="choice">
+            <div className="choice-container">
                 <div className="choice-head">WHY CHOOSE US</div>
-                <div className="container">
+                <div className="home-container">
                     <div className="circular-image">
                         <img src={Image15} alt="Architecture" id='why' />
                     </div>
-                    <div className="rotate"></div>
-                    <div className="light interior">
+                    <div className="rotate-image"></div>
+                    <div className="light-background interior">
                         <h3>INTERIOR DESIGN</h3>
                         <p>Spacefound Interiors undertake revolutionary projects under our responsibility. From designing to execution, we offer end-to-end solutions and supervisions by providing you with a one-stop shop for all your interior needs.</p>
                     </div>
-                    <div className="dark affordable">
+                    <div className="dark-background affordable">
                         <h3>AFFORDABLE PRICE</h3>
                         <p>At Spacefound Interiors, you will find top international brands with up-to-date knowledge of premium materials at very affordable prices.</p>
                     </div>
-                    <div className="light guaranteed">
+                    <div className="light-background guaranteed">
                         <h3>GUARANTEED WORKS</h3>
                         <p>The warranty which we provide is unconditional on all our artistry. A material guarantee is also subject to the terms and conditions of the company. However, we will try our best to assist you for the rest of your life.</p>
                     </div>
-                    <div className="dark number">
+                    <div className="dark-background number">
                         <h3>'N' - Number OF DESIGNS</h3>
                         <p>We give you a wide variety of different options to select from as our moto is customer satisfaction. We shower you with 'n' number of designs, be it - Contemporary, Modern, Roman, Minimalist - anything you need.</p>
                     </div>
-                    <div className="light consultation">
+                    <div className="light-background consultation">
                         <h3>FREE CONSULTATION</h3>
                         <p>We understand your hesitation in contacting in an interior designer for your needs. But you need not worry as we will provide you with free consultation or quote.</p>
                     </div>
-                    <div className="dark support">
+                    <div className="dark-background support">
                         <h3>24/7 SUPPORT</h3>
                         <p>Once you have chosen Spacefound Interiors, you just need to sit and relax as we will be there for you anytime, day or night. We even deliver after-sale services round the clock to cater to your needs.</p>
                     </div>
                 </div>
             </div>
 
-            <div className="typewriter">
+            <div className="home-typewriter">
                 <div className="best">WE ARE THE "
                     <span>
                         <TypeWriterEffect

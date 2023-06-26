@@ -435,7 +435,7 @@ div#slider {
     }
 }
 
-.choice {
+.choice-container {
     margin-top: 3rem;
     font-size: 2rem;
     text-align: center;
@@ -449,7 +449,7 @@ div#slider {
         display: inline;
     }
 
-    .container {
+    .home-container {
         position: relative;
         margin-top: 70px;
         margin-bottom: 50px;
@@ -473,7 +473,7 @@ div#slider {
         height: 100%;
     }
 
-    .rotate {
+    .rotate-image {
         width: 100px;
         height: 100px;
         border-radius: 50%;
@@ -487,7 +487,7 @@ div#slider {
         animation: circle 10s infinite linear;
     }
 
-    .light {
+    .light-background {
         width: 280px;
         position: absolute;
         text-align: center;
@@ -518,7 +518,7 @@ div#slider {
         left: 10%;
     }
 
-    .dark {
+    .dark-background {
         width: 280px;
         position: absolute;
         text-align: center;
@@ -593,7 +593,7 @@ div#slider {
     }
 }
 
-.typewriter {
+.home-typewriter {
     position: relative;
     height: 100px;
     width: 100%;
