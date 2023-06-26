@@ -1,0 +1,113 @@
+.nav {
+    display: flex;
+    padding: 0.5rem;
+    background-color: rgb(4, 4, 49);
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+
+    .logo {
+        display: flex;
+        width: 33%;
+        padding: 0.8rem;
+
+        #logo-image {
+            width: 50px;
+            position: absolute;
+            top: 15%;
+            left: 1%;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            padding-top: 1%;
+
+            span {
+                margin-left: 52px;
+                letter-spacing: 0.15rem;
+                word-spacing: 0.3rem;
+            }
+        }
+    }
+
+    .others {
+        width: calc(100% - 33%);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+        letter-spacing: 0.1rem;
+        padding-left: 5%;
+
+
+        a {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 0.3rem;
+            margin: 0 1rem;
+            border-radius: 5px;
+
+            &:hover {
+                border-bottom: 1px solid white;
+            }
+        }
+
+        .nav-dropdown {
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 0.3rem;
+            margin: 0 1rem;
+
+            &:hover {
+                border-bottom: 1px solid white;
+            }
+
+
+            .nav-dropbtn {
+                font-size: 1.2rem;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                background-color: inherit;
+                font-family: inherit;
+                cursor: pointer;
+
+                .arrow {
+                    margin-left: 3px;
+                    font-size: 15px;
+                }
+            }
+
+            .nav-dropdown-content {
+                font-size: 1.2rem;
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    display: block;
+                    text-align: center;
+                    padding: 0.5rem 1rem;
+                    margin: 0;
+
+                    &:hover {
+                        background-color: #ddd;
+                    }
+                }
+            }
+        }
+
+        .nav-dropdown:hover .nav-dropdown-content {
+            display: block;
+        }
+    }
+}

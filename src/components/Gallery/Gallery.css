@@ -1,0 +1,615 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+.gallery-container {
+  height: 100vh;
+  margin: 0;
+}
+.gallery-container .display {
+  margin: 0;
+  height: 90vh;
+  position: relative;
+  background-color: #D4F1F4;
+}
+.gallery-container .display .vase-1 {
+  position: absolute;
+  bottom: -3%;
+  left: 28%;
+}
+.gallery-container .display .vase-1 img {
+  width: 150px;
+}
+.gallery-container .display .vase-2 {
+  position: absolute;
+  bottom: -3%;
+  left: 62%;
+}
+.gallery-container .display .vase-2 img {
+  width: 150px;
+}
+.gallery-container .display .gallery-container-info {
+  position: absolute;
+  font-size: 3rem;
+  width: 20%;
+  top: 38%;
+  left: 10%;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: #0C2D48;
+}
+.gallery-container .display .img-1 {
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid #90ADC6;
+}
+.gallery-container .display .img-1 img {
+  padding: 10px;
+  width: 200px;
+}
+.gallery-container .display .img-4 {
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid #90ADC6;
+  left: 35%;
+  top: 10%;
+}
+.gallery-container .display .img-4 img {
+  padding: 10px;
+  width: 150px;
+}
+.gallery-container .display .img-3 {
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid #90ADC6;
+  left: 15%;
+  top: 70%;
+}
+.gallery-container .display .img-3 img {
+  padding: 20px;
+  width: 150px;
+}
+.gallery-container .display .img-2 {
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid #90ADC6;
+  left: 63%;
+  top: 10%;
+}
+.gallery-container .display .img-2 img {
+  padding: 20px;
+  width: 200px;
+}
+.gallery-container .display .outerRect {
+  border: 20px solid #90ADC6;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.gallery-container .display .outerRect .innerRect {
+  position: absolute;
+  width: 460px;
+  height: 460px;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  overflow: hidden;
+}
+.gallery-container .display .outerRect .innerRect figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 10s slidy infinite;
+}
+.gallery-container .display .outerRect .innerRect figure img {
+  width: 460px;
+  height: 460px;
+}
+.gallery-container .display .consultant-form {
+  position: absolute;
+  top: 30%;
+  right: 2%;
+  background-color: white;
+  width: 27%;
+  padding: 30px;
+  border-radius: 20px;
+}
+.gallery-container .display .consultant-form .form-head {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+.gallery-container .display .consultant-form .form-head h3 {
+  padding: 5px;
+  display: inline;
+  border-radius: 5px;
+  border-bottom: 3px solid darkblue;
+}
+.gallery-container .display .consultant-form input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 1px 1px 5px 1px grey;
+}
+.gallery-container .display .consultant-form .submit {
+  margin-top: 15px;
+  text-align: center;
+}
+.gallery-container .display .consultant-form .submit input {
+  background-color: #05445E;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.gallery-container .display .consultant-form .submit input:hover {
+  background-color: #085f84;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+.gallery-pics-container {
+  padding: 60px;
+  background: url(../../images/Gallery/gallery-6.jpg);
+  background-size: 100% 100%;
+}
+.gallery-pics-container .gallery-head {
+  margin-bottom: 30px;
+}
+.gallery-pics-container .gallery-head .gall-head {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #0C2D48;
+}
+.gallery-pics-container .gallery-head .gallery-subhead {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #104679;
+}
+.gallery-pics-container .galleries {
+  margin-left: 4rem;
+  padding-bottom: 2rem;
+}
+.gallery-pics-container .gallery-1 {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+.gallery-pics-container .gallery-1 #living-room {
+  width: 30%;
+  border-radius: 10px;
+  height: 40vh;
+}
+.gallery-pics-container .gallery-1 #living-room:hover {
+  transform: scale(1.05);
+}
+.gallery-pics-container .gallery-1 #living-head {
+  position: absolute;
+  bottom: 40%;
+  left: 1%;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  border: 0.2px solid rgba(55, 54, 54, 0.5);
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: rgba(55, 54, 54, 0.7);
+  color: whitesmoke;
+}
+.gallery-pics-container .gallery-2 {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+.gallery-pics-container .gallery-2 #kitchen {
+  width: 30%;
+  height: 40vh;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.gallery-pics-container .gallery-2 #kitchen:hover {
+  transform: scale(1.05);
+}
+.gallery-pics-container .gallery-2 #kitchen-head {
+  position: absolute;
+  bottom: 30%;
+  left: 6%;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  border: 0.2px solid rgba(55, 54, 54, 0.5);
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: rgba(55, 54, 54, 0.7);
+  color: whitesmoke;
+}
+.gallery-pics-container .gallery-3 {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+.gallery-pics-container .gallery-3 #master {
+  width: 30%;
+  height: 40vh;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.gallery-pics-container .gallery-3 #master:hover {
+  transform: scale(1.05);
+}
+.gallery-pics-container .gallery-3 #master-head {
+  position: absolute;
+  bottom: 30%;
+  left: 6%;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  border: 0.2px solid rgba(55, 54, 54, 0.5);
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: rgba(55, 54, 54, 0.7);
+  color: whitesmoke;
+}
+.gallery-pics-container .gallery-4 {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+.gallery-pics-container .gallery-4 #bathroom {
+  width: 30%;
+  height: 40vh;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.gallery-pics-container .gallery-4 #bathroom:hover {
+  transform: scale(1.05);
+}
+.gallery-pics-container .gallery-4 #bath-head {
+  position: absolute;
+  bottom: 30%;
+  left: 2%;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  border: 0.2px solid rgba(55, 54, 54, 0.5);
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: rgba(55, 54, 54, 0.7);
+  color: whitesmoke;
+}
+.gallery-pics-container .gallery-5 {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+.gallery-pics-container .gallery-5 #office {
+  width: 30%;
+  height: 40vh;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.gallery-pics-container .gallery-5 #office:hover {
+  transform: scale(1.05);
+}
+.gallery-pics-container .gallery-5 #office-head {
+  position: absolute;
+  bottom: 40%;
+  left: 6%;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  border: 0.2px solid rgba(55, 54, 54, 0.5);
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: rgba(55, 54, 54, 0.7);
+  color: whitesmoke;
+}
+.gallery-pics-container .gallery-6 {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+.gallery-pics-container .gallery-6 #space {
+  width: 30%;
+  height: 40vh;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.gallery-pics-container .gallery-6 #space:hover {
+  transform: scale(1.05);
+}
+.gallery-pics-container .gallery-6 #space-head {
+  position: absolute;
+  bottom: 40%;
+  left: 6%;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  border: 0.2px solid rgba(55, 54, 54, 0.5);
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: rgba(55, 54, 54, 0.7);
+  color: whitesmoke;
+}
+
+.gallery-consultation-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../images/Gallery/gallery-5.jpg);
+  background-size: 100% 100%;
+}
+.gallery-consultation-container .gallery-consultation {
+  width: 45%;
+  padding: 70px;
+}
+.gallery-consultation-container .gallery-consultation .consultation-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 8%;
+  color: #4F0000;
+}
+.gallery-consultation-container .gallery-consultation .consultation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5%;
+  color: #735055;
+}
+.gallery-consultation-container .gallery-consultation #consultation-1 {
+  position: absolute;
+  top: 45%;
+  left: 22%;
+  border-radius: 50%;
+  border: 3px solid #a36f76;
+}
+.gallery-consultation-container .gallery-consultation #consultation-1 img {
+  width: 100px;
+  padding: 15px;
+}
+.gallery-consultation-container .gallery-consultation #consultation-2 {
+  position: absolute;
+  top: 65%;
+  left: 22%;
+  border-radius: 50%;
+  border: 3px solid #a36f76;
+}
+.gallery-consultation-container .gallery-consultation #consultation-2 img {
+  width: 100px;
+  padding: 15px;
+}
+.gallery-consultation-container .gallery-consultation .consultation-btn {
+  text-align: center;
+}
+.gallery-consultation-container .gallery-consultation .consultation-btn button {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #a36f76;
+  color: #D9CED6;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin-top: 10px;
+}
+.gallery-consultation-container .gallery-consultation .consultation-btn button:hover {
+  background-color: #d8959e;
+}
+
+.gallery-steps-container {
+  position: relative;
+}
+.gallery-steps-container .gallery-steps {
+  margin-top: 50px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+.gallery-steps-container .gallery-steps .steps {
+  width: 100%;
+}
+.gallery-steps-container .gallery-steps .steps .steps-image {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: 85%;
+}
+.gallery-steps-container .gallery-steps .steps .steps-image img {
+  width: 50%;
+  height: auto;
+}
+.gallery-steps-container .gallery-steps .steps .steps-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #145DA0;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.gallery-steps-container .gallery-steps .steps .steps-text .numbers {
+  width: 50px;
+  padding-left: 10px;
+}
+.gallery-steps-container .gallery-steps .steps .steps-text p {
+  width: 80%;
+  padding-right: 20px;
+}
+
+.gallery-typewriter {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  margin-top: 100px;
+  background-color: #2F5061;
+}
+.gallery-typewriter .gallery-best {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  color: #ECFDF1;
+  width: 90%;
+}
+.gallery-typewriter .contact {
+  right: 5%;
+  top: 30%;
+  position: absolute;
+}
+.gallery-typewriter .contact button {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ECFDF1;
+  border-radius: 10px;
+  background-color: #2F5061;
+  color: #ECFDF1;
+  cursor: pointer;
+}
+.gallery-typewriter .contact button:hover {
+  border: 1px solid #a4a5a4;
+  color: #a4a5a4;
+}
+
+.footer {
+  background: url(../../images/footer.jpg);
+  background-size: 100% 100%;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+}
+.footer .footer-info {
+  width: 50%;
+  padding: 5% 3% 5% 20%;
+}
+.footer .footer-info .logo-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer .footer-info .logo-image img {
+  width: 100px;
+}
+.footer .footer-info p {
+  padding: 0 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.footer .services {
+  width: 20%;
+  padding: 6% 1% 5% 1%;
+}
+.footer .services .services-head {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #1b2d4b;
+}
+.footer .services ul {
+  list-style: none;
+}
+.footer .services ul li {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.footer .services ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.footer .services ul li a:hover {
+  color: #044662;
+}
+.footer .contact-us {
+  width: 25%;
+  padding: 6% 1% 5% 1%;
+}
+.footer .contact-us .contact-head {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #1b2d4b;
+}
+.footer .contact-us .contacts {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.footer .contact-us .contacts .address {
+  width: 50px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.footer .contact-us .contacts .phone {
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.footer .contact-us .contacts p {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}/*# sourceMappingURL=Gallery.css.map */
