@@ -24,12 +24,12 @@ const Navbar = () => {
                     <div class="nav-dropdown-content">
                         <Link to="/residential">Residential Interior</Link>
                         <Link to="/living-room">Living Room Interior</Link>
-                        <a href="#">Kitchen Interior</a>
-                        <a href="#">Bathroom Interior</a>
-                        <a href="#">Balcony Decor</a>
+                        <Link to="/kitchen">Kitchen Interior</Link>
+                        <Link to="/bathroom">Bathroom Interior</Link>
+                        <Link to="/balcony">Balcony Decor</Link>
                     </div>
                 </div>
-                <a href="#contact-us">Contact Us</a>
+                <Link to="/contact-us">Contact Us</Link>
             </div>
         </div>
     )

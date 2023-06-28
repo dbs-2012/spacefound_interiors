@@ -115,11 +115,11 @@ div#slider {
     }
 }
 
-.cards {
+.home-cards {
     display: flex;
 }
 
-.card {
+.home-card {
     width: 25%;
     margin-top: 50px;
     margin-left: 5%;
@@ -141,7 +141,7 @@ div#slider {
     }
 }
 
-.card-head {
+.home-card-head {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -156,7 +156,7 @@ div#slider {
     }
 }
 
-.card-info {
+.home-card-info {
     position: absolute;
     height: 350px;
     visibility: hidden;
@@ -164,28 +164,15 @@ div#slider {
     color: white;
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         width: 250px;
-        margin: 85px 50px;
+        margin: 70px 50px;
         text-align: center;
         letter-spacing: 0.08rem;
-
-        button {
-            font-size: 1.1rem;
-            padding: 5px 10px;
-            border-radius: 5px;
-            border: none;
-            outline: none;
-            background-color: rgb(189, 218, 244);
-            margin-top: 25px;
-            font-family: 'Lato', sans-serif;
-            font-weight: bold;
-            cursor: pointer;
-        }
     }
 }
 
-.card:hover .card-info {
+.home-card:hover .home-card-info {
     height: 350px;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -193,7 +180,7 @@ div#slider {
     visibility: visible;
 }
 
-.card:hover .card-head {
+.home-card:hover .home-card-head {
     display: none;
 }
 
@@ -343,8 +330,8 @@ div#slider {
         display: inline;
         cursor: pointer;
 
-        #pooja-room {
-            width: 23%;
+        #bathroom {
+            width: 25%;
             height: 42.5vh;
             border-radius: 10px;
             margin-left: 2px;
@@ -355,7 +342,7 @@ div#slider {
             }
         }
 
-        #pooja-head {
+        #bathroom-head {
             position: absolute;
             bottom: 30%;
             left: 3%;
@@ -408,7 +395,7 @@ div#slider {
         cursor: pointer;
 
         #wardrobe {
-            width: 27.8%;
+            width: 25.8%;
             height: 42.5vh;
             border-radius: 10px;
             margin-left: 10px;
@@ -452,7 +439,7 @@ div#slider {
     .home-container {
         position: relative;
         margin-top: 70px;
-        margin-bottom: 50px;
+        padding-bottom: 100px;
     }
 
     .circular-image {
@@ -512,7 +499,7 @@ div#slider {
 
     }
 
-    .interior {
+    .home-interior {
         position: absolute;
         top: 0;
         left: 10%;
@@ -545,31 +532,31 @@ div#slider {
 
     }
 
-    .affordable {
+    .home-affordable {
         position: absolute;
-        top: 41%;
+        top: 40%;
         left: 3%;
     }
 
-    .guaranteed {
+    .home-guaranteed {
         position: absolute;
-        top: 72%;
+        top: 73%;
         left: 10%;
     }
 
-    .number {
+    .home-number {
         position: absolute;
         top: 0%;
         right: 10%;
     }
 
-    .consultation {
+    .home-consultation {
         position: absolute;
         top: 41%;
         right: 3%;
     }
 
-    .support {
+    .home-support {
         position: absolute;
         top: 75%;
         right: 10%;
@@ -600,7 +587,7 @@ div#slider {
     margin-top: 150px;
     background-color: #2F5061;
 
-    .best {
+    .home-best {
         padding: 30px;
         display: flex;
         align-items: center;
@@ -612,7 +599,7 @@ div#slider {
         width: 90%;
     }
 
-    .contact {
+    .home-contact {
         right: 5%;
         top: 30%;
         position: absolute;
@@ -636,7 +623,7 @@ div#slider {
     }
 }
 
-.footer {
+.home-footer {
     background: url(../../images/footer.jpg);
     background-size: 100% 100%;
     color: black;
@@ -645,11 +632,11 @@ div#slider {
     font-family: 'Poppins', sans-serif;
     display: flex;
 
-    .footer-info {
+    .home-footer-info {
         width: 50%;
         padding: 5% 3% 5% 20%;
 
-        .logo-image {
+        .home-logo-image {
             text-align: center;
             margin-bottom: 20px;
 
@@ -665,11 +652,11 @@ div#slider {
         }
     }
 
-    .services {
+    .home-services {
         width: 20%;
         padding: 6% 1% 5% 1%;
 
-        .services-head {
+        .home-services-head {
             text-align: center;
             margin-bottom: 40px;
             font-size: 1.8rem;
@@ -698,11 +685,11 @@ div#slider {
         }
     }
 
-    .contact-us{
+    .home-contact-us{
         width: 25%;
         padding: 6% 1% 5% 1%;
 
-        .contact-head {
+        .home-contact-head {
             text-align: center;
             margin-bottom: 40px;
             font-size: 1.8rem;
@@ -710,18 +697,18 @@ div#slider {
             color: #1b2d4b;
         }
 
-        .contacts{
+        .home-contacts{
             display: flex;
             margin-bottom: 20px;
             margin-left: 20px;
 
-            .address{
+            .home-address{
                 width: 50px;
                 margin-right: 15px;
                 margin-top: 5px;
             }
 
-            .phone{
+            .home-phone{
                 margin-right: 15px;
                 margin-top: 5px;
             }

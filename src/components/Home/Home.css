@@ -98,11 +98,11 @@ div#slider .btn:hover {
   text-decoration: underline;
 }
 
-.cards {
+.home-cards {
   display: flex;
 }
 
-.card {
+.home-card {
   width: 25%;
   margin-top: 50px;
   margin-left: 5%;
@@ -114,15 +114,15 @@ div#slider .btn:hover {
   cursor: pointer;
   box-shadow: 3px 3px 10px 5px grey;
 }
-.card:hover {
+.home-card:hover {
   transform: scale(1.05);
 }
-.card img {
+.home-card img {
   opacity: 0.7;
   height: 350px;
 }
 
-.card-head {
+.home-card-head {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -132,38 +132,26 @@ div#slider .btn:hover {
   font-weight: 700;
   color: #0C2D48;
 }
-.card-head span {
+.home-card-head span {
   color: #650954;
 }
 
-.card-info {
+.home-card-info {
   position: absolute;
   height: 350px;
   visibility: hidden;
   opacity: 0;
   color: white;
 }
-.card-info p {
-  font-size: 1.2rem;
+.home-card-info p {
+  font-size: 1.1rem;
   width: 250px;
-  margin: 85px 50px;
+  margin: 70px 50px;
   text-align: center;
   letter-spacing: 0.08rem;
 }
-.card-info p button {
-  font-size: 1.1rem;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  background-color: rgb(189, 218, 244);
-  margin-top: 25px;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-}
 
-.card:hover .card-info {
+.home-card:hover .home-card-info {
   height: 350px;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -171,7 +159,7 @@ div#slider .btn:hover {
   visibility: visible;
 }
 
-.card:hover .card-head {
+.home-card:hover .home-card-head {
   display: none;
 }
 
@@ -304,17 +292,17 @@ div#slider .btn:hover {
   display: inline;
   cursor: pointer;
 }
-.display .gallery-4 #pooja-room {
-  width: 23%;
+.display .gallery-4 #bathroom {
+  width: 25%;
   height: 42.5vh;
   border-radius: 10px;
   margin-left: 2px;
   margin-top: 8px;
 }
-.display .gallery-4 #pooja-room:hover {
+.display .gallery-4 #bathroom:hover {
   transform: scale(1.01);
 }
-.display .gallery-4 #pooja-head {
+.display .gallery-4 #bathroom-head {
   position: absolute;
   bottom: 30%;
   left: 3%;
@@ -361,7 +349,7 @@ div#slider .btn:hover {
   cursor: pointer;
 }
 .display .gallery-6 #wardrobe {
-  width: 27.8%;
+  width: 25.8%;
   height: 42.5vh;
   border-radius: 10px;
   margin-left: 10px;
@@ -400,7 +388,7 @@ div#slider .btn:hover {
 .choice-container .home-container {
   position: relative;
   margin-top: 70px;
-  margin-bottom: 50px;
+  padding-bottom: 100px;
 }
 .choice-container .circular-image {
   width: 500px;
@@ -452,7 +440,7 @@ div#slider .btn:hover {
   color: #4e5f6d;
   font-size: 1rem;
 }
-.choice-container .interior {
+.choice-container .home-interior {
   position: absolute;
   top: 0;
   left: 10%;
@@ -480,27 +468,27 @@ div#slider .btn:hover {
   color: #F8EFE4;
   font-size: 1rem;
 }
-.choice-container .affordable {
+.choice-container .home-affordable {
   position: absolute;
-  top: 41%;
+  top: 40%;
   left: 3%;
 }
-.choice-container .guaranteed {
+.choice-container .home-guaranteed {
   position: absolute;
-  top: 72%;
+  top: 73%;
   left: 10%;
 }
-.choice-container .number {
+.choice-container .home-number {
   position: absolute;
   top: 0%;
   right: 10%;
 }
-.choice-container .consultation {
+.choice-container .home-consultation {
   position: absolute;
   top: 41%;
   right: 3%;
 }
-.choice-container .support {
+.choice-container .home-support {
   position: absolute;
   top: 75%;
   right: 10%;
@@ -527,7 +515,7 @@ div#slider .btn:hover {
   margin-top: 150px;
   background-color: #2F5061;
 }
-.home-typewriter .best {
+.home-typewriter .home-best {
   padding: 30px;
   display: flex;
   align-items: center;
@@ -538,12 +526,12 @@ div#slider .btn:hover {
   color: #ECFDF1;
   width: 90%;
 }
-.home-typewriter .contact {
+.home-typewriter .home-contact {
   right: 5%;
   top: 30%;
   position: absolute;
 }
-.home-typewriter .contact button {
+.home-typewriter .home-contact button {
   font-size: 1.2rem;
   font-weight: 400;
   padding: 10px;
@@ -554,12 +542,12 @@ div#slider .btn:hover {
   color: #ECFDF1;
   cursor: pointer;
 }
-.home-typewriter .contact button:hover {
+.home-typewriter .home-contact button:hover {
   border: 1px solid #a4a5a4;
   color: #a4a5a4;
 }
 
-.footer {
+.home-footer {
   background: url(../../images/footer.jpg);
   background-size: 100% 100%;
   color: black;
@@ -568,75 +556,75 @@ div#slider .btn:hover {
   font-family: "Poppins", sans-serif;
   display: flex;
 }
-.footer .footer-info {
+.home-footer .home-footer-info {
   width: 50%;
   padding: 5% 3% 5% 20%;
 }
-.footer .footer-info .logo-image {
+.home-footer .home-footer-info .home-logo-image {
   text-align: center;
   margin-bottom: 20px;
 }
-.footer .footer-info .logo-image img {
+.home-footer .home-footer-info .home-logo-image img {
   width: 100px;
 }
-.footer .footer-info p {
+.home-footer .home-footer-info p {
   padding: 0 15px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
-.footer .services {
+.home-footer .home-services {
   width: 20%;
   padding: 6% 1% 5% 1%;
 }
-.footer .services .services-head {
+.home-footer .home-services .home-services-head {
   text-align: center;
   margin-bottom: 40px;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   color: #1b2d4b;
 }
-.footer .services ul {
+.home-footer .home-services ul {
   list-style: none;
 }
-.footer .services ul li {
+.home-footer .home-services ul li {
   text-align: center;
   margin-bottom: 5px;
 }
-.footer .services ul li a {
+.home-footer .home-services ul li a {
   text-decoration: none;
   color: black;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
-.footer .services ul li a:hover {
+.home-footer .home-services ul li a:hover {
   color: #044662;
 }
-.footer .contact-us {
+.home-footer .home-contact-us {
   width: 25%;
   padding: 6% 1% 5% 1%;
 }
-.footer .contact-us .contact-head {
+.home-footer .home-contact-us .home-contact-head {
   text-align: center;
   margin-bottom: 40px;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   color: #1b2d4b;
 }
-.footer .contact-us .contacts {
+.home-footer .home-contact-us .home-contacts {
   display: flex;
   margin-bottom: 20px;
   margin-left: 20px;
 }
-.footer .contact-us .contacts .address {
+.home-footer .home-contact-us .home-contacts .home-address {
   width: 50px;
   margin-right: 15px;
   margin-top: 5px;
 }
-.footer .contact-us .contacts .phone {
+.home-footer .home-contact-us .home-contacts .home-phone {
   margin-right: 15px;
   margin-top: 5px;
 }
-.footer .contact-us .contacts p {
+.home-footer .home-contact-us .home-contacts p {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;

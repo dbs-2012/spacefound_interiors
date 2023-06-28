@@ -35,6 +35,7 @@ import Image23 from '../../images/Gallery/step-4.png'
 import Image24 from '../../images/Gallery/step-5.png'
 import Image25 from '../../images/Gallery/step-6.png'
 import Image26 from '../../images/logo.png'
+import { Link } from 'react-router-dom';
 
 const Gallery = () => {
     return (
@@ -107,34 +108,34 @@ const Gallery = () => {
                 </div>
                 <div className="galleries">
                     <div className="gallery-1">
-                        <a href="#">
+                        <Link to="/living-room">
                             <img src={Image12} alt="Living Room" id='living-room' />
-                            <div id="living-head"><p>Living Room</p></div></a>
+                            <div id="living-head"><p>Living Room</p></div></Link>
                     </div>
                     <div className="gallery-2">
-                        <a href="">
+                        <Link to="/kitchen">
                             <img src={Image13} alt="Kitchen" id='kitchen' />
-                            <div id="kitchen-head"><p>Kitchen</p></div></a>
+                            <div id="kitchen-head"><p>Kitchen</p></div></Link>
                     </div>
                     <div className="gallery-3">
-                        <a href="">
+                        <Link to="/bedroom">
                             <img src={Image14} alt="Master Bedroom" id='master' />
-                            <div id="master-head"><p>Master Bedroom</p></div></a>
+                            <div id="master-head"><p>Master Bedroom</p></div></Link>
                     </div>
                     <div className="gallery-4">
-                        <a href="">
+                        <Link to="/bathroom">
                             <img src={Image15} alt="Bathroom" id='bathroom' />
-                            <div id="bath-head"><p>Bathroom</p></div></a>
+                            <div id="bath-head"><p>Bathroom</p></div></Link>
                     </div>
                     <div className="gallery-5">
-                        <a href="">
+                        <Link to="/residential">
                             <img src={Image16} alt="Home Office" id='office' />
-                            <div id="office-head"><p>Home Office</p></div></a>
+                            <div id="office-head"><p>Home Office</p></div></Link>
                     </div>
                     <div className="gallery-6">
-                        <a href="">
-                            <img src={Image17} alt="Space Saving Furniture" id='space' />
-                            <div id="space-head"><p>Space Saving Furniture</p></div></a>
+                        <Link to="/balcony">
+                            <img src={Image17} alt="Balcony" id='gallery-balcony' />
+                            <div id="balcony-head"><p>Balcony</p></div></Link>
                     </div>
                 </div>
             </div>
@@ -159,7 +160,7 @@ const Gallery = () => {
                         <p>Receive personalized quotes as per your requirements and floor plan.</p>
                     </div>
                     <div className="consultation-btn">
-                        <a href=""><button>Book Now</button></a>
+                        <Link to="/contact-us"><button>Book Now</button></Link>
                     </div>
                 </div>
             </div>
@@ -246,36 +247,34 @@ const Gallery = () => {
                         />
                     </span> "
                 </div>
-                <div className="contact"><button>Contact Us</button></div>
+                <Link to='/contact-us'><div className="gallery-contact"><button>Contact Us</button></div></Link>
             </div>
-            <div className="footer">
-                <div className="footer-info">
-                    <div className="logo-image">
+            <div className="gallery-footer">
+                <div className="gallery-footer-info">
+                    <div className="gallery-logo-image">
                         <img src={Image26} alt="logo" /></div>
                     <p>Spacefound Interiors is an independent interior design consultancy and one-stop interior design solution with years of professional experience on projects for residential and commercial interior designs and decorators.</p>
                 </div>
-                <div className="services">
-                    <div className="services-head"><h3>SERVICES</h3></div>
+                <div className="gallery-services">
+                    <div className="gallery-services-head"><h3>SERVICES</h3></div>
                     <p>
                         <ul>
-                            <li><a href="">Residential Interior</a></li>
-                            <li><a href="">Commercial Interior</a></li>
-                            <li><a href="">Office Interior</a></li>
-                            <li><a href="">Living Room Interior</a></li>
-                            <li><a href="">Kitchen Interior</a></li>
-                            <li><a href="">Bathroom Interior</a></li>
-                            <li><a href="">Balcony Decor</a></li>
+                            <li><Link to="/residential">Residential Interior</Link></li>
+                            <li><Link to="/living-room">Living Room Interior</Link></li>
+                            <li><Link to="/kitchen">Kitchen Interior</Link></li>
+                            <li><Link to="/bathroom">Bathroom Interior</Link></li>
+                            <li><Link to="/balcony">Balcony Decor</Link></li>
                         </ul>
                     </p>
                 </div>
-                <div className="contact-us">
-                    <div className="contact-head"><h3>CONTACT US</h3></div>
-                    <div className="contacts">
-                        <FaLocationDot className='address' />
+                <div className="gallery-contact-us">
+                    <div className="gallery-contact-head"><h3>CONTACT US</h3></div>
+                    <div className="gallery-contacts">
+                        <FaLocationDot className='gallery-address' />
                         <p>Address: 64/2, TNT Cresent, Thanisandra Main Tech Park, Above ICICI Bank, Bangalore, Karnataka 560077</p>
                     </div>
-                    <div className="contacts">
-                        <FaMobileAlt className='phone' />
+                    <div className="gallery-contacts">
+                        <FaMobileAlt className='gallery-phone' />
                         <p>Mobile: +91 9353301503</p>
                     </div>
                 </div>
