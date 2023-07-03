@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/spacefound_interiors/static/css/main.f357a0f9.css",
-    "main.js": "/spacefound_interiors/static/js/main.11d9be70.js",
+    "main.js": "/spacefound_interiors/static/js/main.2b477f82.js",
     "static/js/787.c49b32de.chunk.js": "/spacefound_interiors/static/js/787.c49b32de.chunk.js",
     "static/media/green-6.jpg": "/spacefound_interiors/static/media/green-6.804c8a2a5a9380d2645c.jpg",
     "static/media/half-3.png": "/spacefound_interiors/static/media/half-3.352157e9e304eaeae6e4.png",
@@ -179,11 +179,11 @@
     "static/media/vase-2.png": "/spacefound_interiors/static/media/vase-2.5b6cf10957a180258410.png",
     "index.html": "/spacefound_interiors/index.html",
     "main.f357a0f9.css.map": "/spacefound_interiors/static/css/main.f357a0f9.css.map",
-    "main.11d9be70.js.map": "/spacefound_interiors/static/js/main.11d9be70.js.map",
+    "main.2b477f82.js.map": "/spacefound_interiors/static/js/main.2b477f82.js.map",
     "787.c49b32de.chunk.js.map": "/spacefound_interiors/static/js/787.c49b32de.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f357a0f9.css",
-    "static/js/main.11d9be70.js"
+    "static/js/main.2b477f82.js"
   ]
 }
