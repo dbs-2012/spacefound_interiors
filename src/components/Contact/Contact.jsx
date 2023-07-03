@@ -43,7 +43,7 @@ const Contact = () => {
                 <div className="services-best">WE ARE THE "
                     <span>
                         <Typewriter
-                            words={['BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE', 'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE', 'BEST HOME OFFICE INTERIOR DESIGNERS IN BANGALORE']}
+                            words={['BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE', 'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE']}
                             loop={false}
                             cursor
                             cursorStyle='|'

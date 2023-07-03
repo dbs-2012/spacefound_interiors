@@ -58,7 +58,7 @@ const Home = () => {
                         SPACE <span>SAVING</span> DESIGN
                     </div>
                     <div className='home-card-info'>
-                        <p>Commercial Interior Design Portfolio Consists Of Some Formal Interior Projects We Have Undertaken Throughout The Years Of Interior Design Experience We Possess.</p>
+                        <p>Space Saving Design Portfolio Consists Of Some Amazing Interior Projects We Have Undertaken Over The Years By Making Small Rooms Look Spacious.</p>
                     </div>
                 </div>
                 <div className="home-card">
@@ -145,7 +145,7 @@ const Home = () => {
                 <div className="home-best">WE ARE THE "
                     <span>
                         <Typewriter
-                            words={['BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE', 'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE', 'BEST HOME OFFICE INTERIOR DESIGNERS IN BANGALORE']}
+                            words={['BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE', 'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE']}
                             loop={false}
                             cursor
                             cursorStyle='|'
