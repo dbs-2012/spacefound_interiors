@@ -3,7 +3,7 @@ import '../Services.css'
 import Carousel from "react-elastic-carousel";
 import { FaLocationDot } from 'react-icons/fa6'
 import { FaMobileAlt } from 'react-icons/fa'
-import TypeWriterEffect from "react-typewriter-effect"
+import { Typewriter } from 'react-simple-typewriter'
 import Image1 from '../../images/Kitchen/display-1.jpg'
 import Image2 from '../../images/Kitchen/display-2.jpg'
 import Image3 from '../../images/Kitchen/ushaped-1.jpg'
@@ -138,27 +138,17 @@ const Kitchen = () => {
             <div className="services-typewriter">
                 <div className="services-best">WE ARE THE "
                     <span>
-                        <TypeWriterEffect
-                            textStyle={{
-                                fontFamily: 'Red Hat Display',
-                                color: '#ECFDF1',
-                                fontWeight: 700,
-                                fontSize: '2rem',
-                            }}
-                            startDelay={1000}
-                            cursorColor="#90ADC6"
-                            multiText={[
-                                'BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE',
-                                'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE',
-                                'BEST HOME OFFICE INTERIOR DESIGNERS IN BANGALORE',
-                            ]}
-                            multiTextDelay={1000}
+                        <Typewriter
+                            words={['BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE', 'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE', 'BEST HOME OFFICE INTERIOR DESIGNERS IN BANGALORE']}
+                            loop={false}
+                            cursor
+                            cursorStyle='|'
                             typeSpeed={70}
-                            multiTextLoop
+                            deleteSpeed={50}
+                            delaySpeed={1000}
                         />
                     </span> "
                 </div>
-                <Link to='/contact-us'><div className="services-contact"><button>Contact Us</button></div></Link>
             </div>
             <div className="services-footer">
                 <div className="services-footer-info">

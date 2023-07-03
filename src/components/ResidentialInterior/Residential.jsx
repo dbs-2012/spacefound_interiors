@@ -3,7 +3,7 @@ import '../Services.css'
 import Carousel from "react-elastic-carousel";
 import { FaLocationDot } from 'react-icons/fa6'
 import { FaMobileAlt } from 'react-icons/fa'
-import TypeWriterEffect from "react-typewriter-effect"
+import { Typewriter } from 'react-simple-typewriter'
 import Image1 from '../../images/Residential/display-1.jpg'
 import Image2 from '../../images/Residential/display-2.jpg'
 import Image3 from '../../images/Residential/contemporary-1.jpg'
@@ -41,7 +41,7 @@ import { Link } from 'react-router-dom';
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
+  { width: 562, itemsToShow: 2},
   { width: 768, itemsToShow: 2 },
   { width: 1200, itemsToShow: 3 },
 ];
@@ -137,29 +137,19 @@ const Residential = () => {
         </Carousel>
       </div>
       <div className="services-typewriter">
-        <div className="services-best">WE ARE THE "
+        <div className="services-best">WE ARE THE 
           <span>
-            <TypeWriterEffect
-              textStyle={{
-                fontFamily: 'Red Hat Display',
-                color: '#ECFDF1',
-                fontWeight: 700,
-                fontSize: '2rem',
-              }}
-              startDelay={1000}
-              cursorColor="#90ADC6"
-              multiText={[
-                'BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE',
-                'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE',
-                'BEST HOME OFFICE INTERIOR DESIGNERS IN BANGALORE',
-              ]}
-              multiTextDelay={1000}
+            <Typewriter
+              words={['BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE', 'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE']}
+              loop={false}
+              cursor
+              cursorStyle='|'
               typeSpeed={70}
-              multiTextLoop
+              deleteSpeed={70}
+              delaySpeed={1000}
             />
-          </span> "
+          </span>
         </div>
-        <Link to='/contact-us'><div className="services-contact"><button>Contact Us</button></div></Link>
       </div>
       <div className="services-footer">
         <div className="services-footer-info">

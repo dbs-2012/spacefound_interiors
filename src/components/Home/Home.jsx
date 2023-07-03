@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css'
 import { FaLocationDot } from 'react-icons/fa6'
 import { FaMobileAlt } from 'react-icons/fa'
-import TypeWriterEffect from "react-typewriter-effect"
+import { Typewriter } from 'react-simple-typewriter'
 import { Link } from "react-router-dom";
 import Image1 from '../../images/Home/home-1.jpeg'
 import Image2 from '../../images/Home/home-2.jpg'
@@ -54,7 +54,7 @@ const Home = () => {
                 </div>
                 <div className="home-card">
                     <img src={Image7} alt="Commercial" />
-                    <div className='home-card-head' id='second'>
+                    <div className='home-card-head'>
                         SPACE <span>SAVING</span> DESIGN
                     </div>
                     <div className='home-card-info'>
@@ -63,7 +63,7 @@ const Home = () => {
                 </div>
                 <div className="home-card">
                     <img src={Image8} alt="Office" />
-                    <div className='home-card-head' id='third'>
+                    <div className='home-card-head'>
                         OFFICE <span>DESIGN</span>
                     </div>
                     <div className='home-card-info'>
@@ -82,27 +82,27 @@ const Home = () => {
                 <div className="galleries">
                     <div className="gallery-1">
                         <Link to="/living-room"><img src={Image9} alt="Living Room" id='living-room' />
-                        <div id="living-head"><p>Living Room</p></div></Link>
+                            <div id="living-head"><p>Living Room</p></div></Link>
                     </div>
                     <div className="gallery-2">
                         <Link to="/bedroom"><img src={Image10} alt="Master Bedroom" id='master-bedroom' />
-                        <div id="master-head"><p>Master Bedroom</p></div></Link>
+                            <div id="master-head"><p>Master Bedroom</p></div></Link>
                     </div>
                     <div className="gallery-3">
                         <Link to="/balcony"><img src={Image11} alt="Balcony" id='balcony' />
-                        <div id="balcony-head"><p>Balcony</p></div></Link>
+                            <div id="balcony-head"><p>Balcony</p></div></Link>
                     </div>
                     <div className="gallery-4">
                         <Link to="/bathroom"><img src={Image12} alt="Bathroom" id='bathroom' />
-                        <div id="bathroom-head"><p>Bathroom</p></div></Link>
+                            <div id="bathroom-head"><p>Bathroom</p></div></Link>
                     </div>
                     <div className="gallery-5">
                         <Link to="/kitchen"><img src={Image13} alt="Kitchen" id='kitchen' />
-                        <div id="kitchen-head"><p>Kitchen</p></div></Link>
+                            <div id="kitchen-head"><p>Kitchen</p></div></Link>
                     </div>
                     <div className="gallery-6">
                         <Link to="/residential"><img src={Image14} alt="Wardrobe" id='wardrobe' />
-                        <div id="wardrobe-head"><p>Wardrobe</p></div></Link>
+                            <div id="wardrobe-head"><p>Wardrobe</p></div></Link>
                     </div>
                 </div>
             </div>
@@ -144,27 +144,17 @@ const Home = () => {
             <div className="home-typewriter">
                 <div className="home-best">WE ARE THE "
                     <span>
-                        <TypeWriterEffect
-                            textStyle={{
-                                fontFamily: 'Red Hat Display',
-                                color: '#ECFDF1',
-                                fontWeight: 700,
-                                fontSize: '2rem',
-                            }}
-                            startDelay={1000}
-                            cursorColor="#90ADC6"
-                            multiText={[
-                                'BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE',
-                                'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE',
-                                'BEST HOME OFFICE INTERIOR DESIGNERS IN BANGALORE',
-                            ]}
-                            multiTextDelay={1000}
+                        <Typewriter
+                            words={['BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE', 'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE', 'BEST HOME OFFICE INTERIOR DESIGNERS IN BANGALORE']}
+                            loop={false}
+                            cursor
+                            cursorStyle='|'
                             typeSpeed={70}
-                            multiTextLoop
+                            deleteSpeed={50}
+                            delaySpeed={1000}
                         />
                     </span> "
                 </div>
-                <Link to='/contact-us'><div className="home-contact"><button>Contact Us</button></div></Link>
             </div>
             <div className="home-footer">
                 <div className="home-footer-info">

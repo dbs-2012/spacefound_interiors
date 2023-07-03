@@ -8,7 +8,7 @@ import { PiNumberCircleFiveBold } from "react-icons/pi";
 import { PiNumberCircleSixBold } from "react-icons/pi";
 import { FaLocationDot } from 'react-icons/fa6'
 import { FaMobileAlt } from 'react-icons/fa'
-import TypeWriterEffect from "react-typewriter-effect"
+import { Typewriter } from 'react-simple-typewriter'
 import Image from '../../images/Gallery/bedroom.png'
 import Image2 from '../../images/Gallery/living-room.png'
 import Image3 from '../../images/Gallery/kitchen.png'
@@ -24,7 +24,7 @@ import Image12 from '../../images/Gallery/dream-1.jpg'
 import Image13 from '../../images/Gallery/dream-2.jpg'
 import Image14 from '../../images/Gallery/dream-3.jpeg'
 import Image15 from '../../images/Gallery/dream-4.jpg'
-import Image16 from '../../images/Gallery/dream-5.jpeg'
+import Image16 from '../../images/Gallery/dream-5.jpg'
 import Image17 from '../../images/Gallery/dream-6.jpg'
 import Image18 from '../../images/Gallery/consultation-1.png'
 import Image19 from '../../images/Gallery/consultation-2.png'
@@ -129,8 +129,8 @@ const Gallery = () => {
                     </div>
                     <div className="gallery-5">
                         <Link to="/residential">
-                            <img src={Image16} alt="Home Office" id='office' />
-                            <div id="office-head"><p>Home Office</p></div></Link>
+                            <img src={Image16} alt="Wardrobe" id='wardrobe' />
+                            <div id="wardrobe-head"><p>Wardrobe</p></div></Link>
                     </div>
                     <div className="gallery-6">
                         <Link to="/balcony">
@@ -166,6 +166,11 @@ const Gallery = () => {
             </div>
 
             <div className="gallery-steps-container">
+                <div className="gallery-steps-head-container">
+                    <div className="gallery-steps-head">
+                        Complete your dream home interiors in just 6 easy steps
+                    </div>
+                </div>
                 <div className="gallery-steps">
                     <div className="steps">
                         <div className="steps-image">
@@ -227,27 +232,17 @@ const Gallery = () => {
             <div className="gallery-typewriter">
                 <div className="gallery-best">WE ARE THE "
                     <span>
-                        <TypeWriterEffect
-                            textStyle={{
-                                fontFamily: 'Red Hat Display',
-                                color: '#ECFDF1',
-                                fontWeight: 700,
-                                fontSize: '2rem',
-                            }}
-                            startDelay={1000}
-                            cursorColor="#90ADC6"
-                            multiText={[
-                                'BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE',
-                                'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE',
-                                'BEST HOME OFFICE INTERIOR DESIGNERS IN BANGALORE',
-                            ]}
-                            multiTextDelay={1000}
+                        <Typewriter
+                            words={['BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE', 'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE', 'BEST HOME OFFICE INTERIOR DESIGNERS IN BANGALORE']}
+                            loop={false}
+                            cursor
+                            cursorStyle='|'
                             typeSpeed={70}
-                            multiTextLoop
+                            deleteSpeed={50}
+                            delaySpeed={1000}
                         />
                     </span> "
                 </div>
-                <Link to='/contact-us'><div className="gallery-contact"><button>Contact Us</button></div></Link>
             </div>
             <div className="gallery-footer">
                 <div className="gallery-footer-info">

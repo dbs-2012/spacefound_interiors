@@ -21,7 +21,8 @@
 
     p {
         position: absolute;
-        width: fit-content;
+        width: 100%;
+        text-align: center;
         font-family: 'Playfair Display', sans-serif;
         font-size: 2.5rem;
         font-style: italic;
@@ -81,7 +82,7 @@
     border-radius: 10px;
     margin: 0 15px;
 
-    &:hover{
+    &:hover {
         transform: scale(1.01);
     }
 
@@ -121,37 +122,21 @@
     background-color: #2F5061;
 
     .services-best {
-        padding: 30px;
+        padding: 30px 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 2rem;
+        font-size: 1.9rem;
         font-family: 'Red Hat Display';
         font-weight: 700;
         color: #ECFDF1;
-        width: 90%;
-    }
+        width: 100%;
 
-    .services-contact {
-        right: 5%;
-        top: 30%;
-        position: absolute;
-
-        button {
-            font-size: 1.2rem;
-            font-weight: 400;
-            padding: 10px;
-            outline: none;
-            border: 1px solid #ECFDF1;
-            border-radius: 10px;
-            background-color: #2F5061;
-            color: #ECFDF1;
-            cursor: pointer;
-
-            &:hover {
-                border: 1px solid #a4a5a4;
-                color: #a4a5a4;
-            }
+        span {
+            margin-left: 3px;
+            font-size: 1.9rem;
+            font-family: 'Red Hat Display';
+            font-weight: 700;
         }
     }
 }
@@ -261,4 +246,293 @@
 
 .rec.rec-arrow-right {
     margin-right: 15px;
+}
+
+@media only screen and (max-width: 1140px) {
+    .services-display {
+
+        img {
+            height: 50vh;
+        }
+
+        .display-color {
+            height: 50vh;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    .type-name {
+        padding-bottom: 2rem;
+
+        .type-head-container {
+            margin-bottom: 1.5rem;
+
+            .type-container {
+                width: 80%;
+
+                .type-head {
+                    font-size: 2.2rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+    .item {
+        height: 35vh;
+
+        &:hover {
+            transform: scale(1.01);
+        }
+    }
+
+    .services-typewriter {
+        height: auto;
+
+        .services-best {
+            padding: 20px 0;
+            font-size: 1.3rem;
+
+            span {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+
+    .services-footer {
+        font-size: 1.1rem;
+
+        .services-footer-info {
+            width: 40%;
+            padding: 5% 1%;
+
+            .services-logo-image {
+                margin-bottom: 10px;
+            }
+
+            p {
+                padding: 0 5px;
+            }
+        }
+
+        .services-services {
+            width: 30%;
+            padding: 8% 1%;
+
+            .services-services-head {
+                font-size: 1.5rem;
+            }
+        }
+
+        .services-contact-us {
+            width: 30%;
+            padding: 8% 1% 8% 0%;
+
+            .services-contact-head {
+                font-size: 1.5rem;
+            }
+
+            .services-contacts {
+                margin-left: 5px;
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .services-display {
+
+        img {
+            height: 40vh;
+        }
+
+        .display-color {
+            height: 40vh;
+        }
+
+        p {
+            font-size: 1.7rem;
+        }
+    }
+
+    .type-name {
+
+        .type-head-container {
+            margin-bottom: 1.1rem;
+
+            .type-container {
+                width: 85%;
+
+                .type-head {
+                    font-size: 2rem;
+                }
+
+                .type-subhead {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    .item {
+        margin: 0 5px;
+    }
+
+    .services-typewriter {
+
+        .services-best {
+            font-size: 0.97rem;
+
+            span {
+                font-size: 0.97rem;
+            }
+        }
+    }
+
+    .services-footer{
+        display: block;
+        font-size: 1rem;
+
+        .services-footer-info{
+            width: 100%;
+            padding: 2% 5%;
+
+            .services-logo-image{
+                margin-bottom: 0;
+            }
+        }
+
+        .services-services{
+            width: 100%;
+            padding: 2% 5%;
+
+            .services-services-head{
+                margin-bottom: 20px;
+            }
+
+            ul{
+                li{
+                    margin-bottom: 2px;
+                }
+            }
+        }
+
+        .services-contact-us{
+            width: 100%;
+            padding: 1% 5% 2% 5%;
+
+            .services-contact-head{
+                margin-bottom: 20px;
+            }
+            .services-contacts{
+
+                .services-phone{
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .rec.rec-arrow-left {
+        margin-left: 5px;
+    }
+
+    .rec.rec-arrow-right {
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 562px){
+    .services-display{
+
+        img{
+            height: 30vh;
+        }
+
+        .display-color{
+            height: 30vh;
+        }
+
+        p{
+            font-size: 1.4rem;
+        }
+    }
+
+    .type-name{
+        padding-bottom: 1.5rem;
+
+        .type-head-container{
+            margin-bottom: 0.5rem;
+            
+            .type-container{
+                width: 95%;
+
+                .type-head{
+                    font-size: 1.5rem;
+                }
+
+                .type-subhead{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    .item{
+        height: 25vh;
+        margin: 0;
+    }
+
+    .services-typewriter{
+
+        .services-best{
+            font-size: 0.6rem;
+
+            span{
+                font-size: 0.6rem;
+                margin-left: 1px;
+            }
+        }
+    }
+
+    .services-footer{
+
+        .services-footer-info{
+            padding: 1% 5%;
+
+            .services-logo-image{
+                margin-bottom: 0;
+            }
+        }
+
+        .services-services{
+            
+            .services-services-head{
+                margin-bottom: 20px;
+            }
+        }
+
+        .services-contact-us{
+
+            .services-contact-head{
+                margin-bottom: 20px;
+            }
+
+            .services-contacts{
+                margin-bottom: 10px;
+
+                .services-phone{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
 }

@@ -61,6 +61,7 @@ div#slider {
     .text {
         position: absolute;
         top: 50%;
+        text-align: center;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 3rem;
@@ -73,6 +74,7 @@ div#slider {
         position: absolute;
         top: 65%;
         left: 50%;
+        text-align: center;
         transform: translate(-50%, -50%);
         font-family: 'Lato', sans-serif;
         font-style: italic;
@@ -106,7 +108,7 @@ div#slider {
     font-weight: 700;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     color: #042d3e;
 
     #we {
@@ -117,27 +119,30 @@ div#slider {
 
 .home-cards {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-card {
     width: 25%;
     margin-top: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 350px;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 47vh;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     box-shadow: 3px 3px 10px 5px grey;
 
-    &:hover{
+    &:hover {
         transform: scale(1.05);
     }
 
     img {
         opacity: 0.7;
-        height: 350px;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -147,7 +152,8 @@ div#slider {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
-    width: 270px;
+    text-align: center;
+    width: 100%;
     font-weight: 700;
     color: #0C2D48;
 
@@ -158,22 +164,25 @@ div#slider {
 
 .home-card-info {
     position: absolute;
-    height: 350px;
+    height: 100%;
     visibility: hidden;
     opacity: 0;
+    width: 100%;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     p {
         font-size: 1.1rem;
-        width: 250px;
-        margin: 70px 50px;
+        width: 80%;
         text-align: center;
         letter-spacing: 0.08rem;
     }
 }
 
 .home-card:hover .home-card-info {
-    height: 350px;
+    height: 47vh;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
@@ -182,14 +191,6 @@ div#slider {
 
 .home-card:hover .home-card-head {
     display: none;
-}
-
-#second {
-    width: 280px;
-}
-
-#third {
-    width: 190px;
 }
 
 .display {
@@ -229,7 +230,7 @@ div#slider {
         }
     }
 
-    .galleries{
+    .galleries {
         margin-left: 4rem;
         padding-bottom: 2rem;
     }
@@ -242,8 +243,9 @@ div#slider {
         #living-room {
             width: 45%;
             border-radius: 10px;
+            height: 42.5vh;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.01);
             }
         }
@@ -274,7 +276,7 @@ div#slider {
             border-radius: 10px;
             margin-left: 10px;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.01);
             }
         }
@@ -305,7 +307,7 @@ div#slider {
             border-radius: 10px;
             margin-left: 10px;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.01);
             }
         }
@@ -337,7 +339,7 @@ div#slider {
             margin-left: 2px;
             margin-top: 8px;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.01);
             }
         }
@@ -369,7 +371,7 @@ div#slider {
             margin-left: 10px;
             margin-top: 8px;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.01);
             }
         }
@@ -401,7 +403,7 @@ div#slider {
             margin-left: 10px;
             margin-top: 8px;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.01);
             }
         }
@@ -438,13 +440,14 @@ div#slider {
 
     .home-container {
         position: relative;
-        margin-top: 70px;
-        padding-bottom: 100px;
+        margin-top: 5%;
+        padding-bottom: 20%;
+        padding-top: 10%;
     }
 
     .circular-image {
-        width: 500px;
-        height: 500px;
+        width: 30vw;
+        height: 60vh;
         border-radius: 50%;
         overflow: hidden;
         background-color: #EEEDE7;
@@ -461,21 +464,21 @@ div#slider {
     }
 
     .rotate-image {
-        width: 100px;
-        height: 100px;
+        width: 6vw;
+        height: 12vh;
         border-radius: 50%;
         overflow: hidden;
         background-color: #EEEDE7;
         display: inline-block;
         vertical-align: middle;
         position: absolute;
-        left: 28%;
-        top: 25%;
+        left: 32%;
+        top: 28%;
         animation: circle 10s infinite linear;
     }
 
     .light-background {
-        width: 280px;
+        width: 18vw;
         position: absolute;
         text-align: center;
         font-family: 'Lato', sans-serif;
@@ -506,7 +509,7 @@ div#slider {
     }
 
     .dark-background {
-        width: 280px;
+        width: 18vw;
         position: absolute;
         text-align: center;
         font-family: 'Lato', sans-serif;
@@ -534,13 +537,13 @@ div#slider {
 
     .home-affordable {
         position: absolute;
-        top: 40%;
-        left: 3%;
+        top: 35%;
+        left: 2%;
     }
 
     .home-guaranteed {
         position: absolute;
-        top: 73%;
+        top: 62%;
         left: 10%;
     }
 
@@ -552,31 +555,31 @@ div#slider {
 
     .home-consultation {
         position: absolute;
-        top: 41%;
-        right: 3%;
+        top: 35%;
+        right: 2%;
     }
 
     .home-support {
         position: absolute;
-        top: 75%;
+        top: 64%;
         right: 10%;
     }
 }
 
 @keyframes circle {
     0% {
-        top: 25%;
-        left: 30%;
+        top: 28%;
+        left: 32%;
     }
 
     50% {
         top: 50%;
-        left: 30.5%;
+        left: 32.5%;
     }
 
     100% {
         top: 25%;
-        left: 30%;
+        left: 32%;
     }
 }
 
@@ -584,41 +587,24 @@ div#slider {
     position: relative;
     height: 100px;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 50px;
     background-color: #2F5061;
 
     .home-best {
-        padding: 30px;
+        padding: 30px 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 2rem;
+        font-size: 1.9rem;
         font-family: 'Red Hat Display';
         font-weight: 700;
         color: #ECFDF1;
-        width: 90%;
-    }
+        width: 100%;
 
-    .home-contact {
-        right: 5%;
-        top: 30%;
-        position: absolute;
-
-        button {
-            font-size: 1.2rem;
-            font-weight: 400;
-            padding: 10px;
-            outline: none;
-            border: 1px solid #ECFDF1;
-            border-radius: 10px;
-            background-color: #2F5061;
-            color: #ECFDF1;
-            cursor: pointer;
-
-            &:hover {
-                border: 1px solid #a4a5a4;
-                color: #a4a5a4;
-            }
+        span {
+            font-size: 1.9rem;
+            font-family: 'Red Hat Display';
+            font-weight: 700;
         }
     }
 }
@@ -685,7 +671,7 @@ div#slider {
         }
     }
 
-    .home-contact-us{
+    .home-contact-us {
         width: 25%;
         padding: 6% 1% 5% 1%;
 
@@ -697,27 +683,892 @@ div#slider {
             color: #1b2d4b;
         }
 
-        .home-contacts{
+        .home-contacts {
             display: flex;
             margin-bottom: 20px;
             margin-left: 20px;
 
-            .home-address{
+            .home-address {
                 width: 50px;
                 margin-right: 15px;
                 margin-top: 5px;
             }
 
-            .home-phone{
+            .home-phone {
                 margin-right: 15px;
                 margin-top: 5px;
             }
 
-            p{
+            p {
                 font-size: 1.1rem;
                 font-family: 'Poppins', sans-serif;
                 font-weight: 500;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .choice-container {
+        .circular-image {
+            width: 35vw;
+            height: 55vh;
+        }
+
+        .rotate-image {
+            width: 7vw;
+            height: 11vh;
+            top: 30%;
+            left: 30%;
+            animation: circle1230 10s infinite linear;
+        }
+
+        .light-background {
+            width: 25vw;
+        }
+
+        .dark-background {
+            width: 25vw;
+        }
+
+        .home-interior {
+            left: 5%;
+        }
+
+        .home-affordable {
+            top: 40%;
+        }
+
+        .home-guaranteed {
+            left: 5%;
+            top: 67%;
+        }
+
+        .home-number {
+            right: 5%;
+        }
+
+        .home-consultation {
+            top: 40%;
+        }
+
+        .home-support {
+            right: 5%;
+            top: 74%;
+        }
+    }
+
+    @keyframes circle1230 {
+        0% {
+            top: 30%;
+            left: 30%;
+        }
+
+        50% {
+            top: 50%;
+            left: 30.5%;
+        }
+
+        100% {
+            top: 30%;
+            left: 30%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    div#slider {
+
+        .text {
+            font-size: 2.5rem;
+            width: 60%;
+        }
+
+        .small-text {
+            width: 60%;
+        }
+    }
+
+    .info {
+        margin-top: 30px;
+        font-size: 2.2rem;
+    }
+
+    .home-card {
+        width: 30%;
+        height: 37vh;
+        margin-top: 30px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .home-card-head {
+        font-size: 1.25rem;
+    }
+
+    .home-card-info {
+
+        p {
+            width: 80%;
+            margin-top: 25%;
+        }
+    }
+
+    .display {
+        margin-top: 3rem;
+
+        .dis {
+            margin-bottom: 3rem;
+
+            .disp {
+                width: 75%;
+
+                .display-head {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .galleries {
+            margin-left: 2rem;
+        }
+
+        .gallery-1 {
+
+            #living-room {
+                width: 60%;
+                height: 38vh;
+            }
+        }
+
+        .gallery-2 {
+
+            #master-bedroom {
+                width: 35%;
+                height: 38vh;
+            }
+        }
+
+        .gallery-3 {
+
+            #balcony {
+                width: 40%;
+                height: 38vh;
+                margin-left: 0;
+            }
+        }
+
+        .gallery-4 {
+
+            #bathroom {
+                width: 55%;
+                height: 38vh;
+                margin-left: 10px;
+            }
+        }
+
+        .gallery-5 {
+
+            #kitchen {
+                width: 45%;
+                height: 38vh;
+                margin-left: 0;
+            }
+        }
+
+        .gallery-6 {
+
+            #wardrobe {
+                width: 50%;
+                height: 38vh;
+            }
+        }
+    }
+
+    .home-typewriter {
+        height: auto;
+        margin-top: 10%;
+
+        .home-best {
+            padding: 20px 0;
+            font-size: 1.3rem;
+
+            span {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+
+    .home-footer {
+        font-size: 1.1rem;
+
+        .home-footer-info {
+            width: 40%;
+            padding: 5% 1%;
+
+            .home-logo-image {
+                margin-bottom: 10px;
+            }
+
+            p {
+                padding: 0 5px;
+            }
+        }
+
+        .home-services {
+            width: 30%;
+            padding: 8% 1%;
+
+            .home-services-head {
+                font-size: 1.5rem;
+            }
+        }
+
+        .home-contact-us {
+            width: 30%;
+            padding: 8% 1% 8% 0%;
+
+            .home-contact-head {
+                font-size: 1.5rem;
+            }
+
+            .home-contacts {
+                margin-left: 5px;
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .choice-container {
+
+        .home-container {
+            padding-top: 25%;
+            padding-bottom: 32%;
+        }
+
+        .circular-image {
+            width: 40vw;
+            height: 50vh;
+        }
+
+        .rotate-image {
+            width: 8vw;
+            height: 10vh;
+            top: 40%;
+            left: 27%;
+            animation: circle940 10s infinite linear;
+        }
+
+        .light-background {
+            width: 27vw;
+            box-shadow: 1px 1px 10px 5px rgb(184, 184, 184);
+
+        }
+
+        .dark-background {
+            width: 27vw;
+            box-shadow: 1px 1px 5px 1px rgb(184, 184, 184);
+        }
+    }
+
+    @keyframes circle940 {
+        0% {
+            top: 40%;
+            left: 27%;
+        }
+
+        50% {
+            top: 60%;
+            left: 27.5%;
+        }
+
+        100% {
+            top: 40%;
+            left: 27%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div#slider {
+
+        figure {
+
+            img {
+                height: 80vh;
+            }
+        }
+
+        .text {
+            font-size: 2rem;
+            width: 70%;
+            top: 40%;
+        }
+
+        .small-text {
+            width: 70%;
+            top: 55%;
+        }
+
+        .btn {
+            top: 70%;
+        }
+    }
+
+    .info {
+        font-size: 2rem;
+    }
+
+    .home-cards {
+        display: block;
+        text-align: center;
+    }
+
+    .home-card {
+        width: 75%;
+        text-align: center;
+        margin-top: 6%;
+        margin-left: 12%;
+    }
+
+    .home-card-info {
+
+        p {
+            margin-top: 20%;
+        }
+    }
+
+    .display {
+        margin-top: 2.5rem;
+
+        .dis {
+            margin-bottom: 2.5rem;
+
+            .disp {
+                width: 80%;
+
+                .display-subhead {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .choice-container {
+
+        .home-container {
+            margin-top: 7%;
+            padding-top: 50%;
+            padding-bottom: 50%;
+            text-align: end;
+        }
+
+        .circular-image {
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .rotate-image {
+            left: 48%;
+            width: 10vw;
+            height: 8vh;
+            animation: circle768 10s infinite linear;
+        }
+
+        .light-background {
+            width: 43vw;
+
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+
+        .dark-background {
+            width: 43vw;
+
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+
+        .home-interior {
+            top: 1%;
+        }
+
+        .home-number {
+            top: 1%;
+        }
+
+        .home-affordable {
+            top: 30%;
+        }
+
+        .home-consultation {
+            top: 50%;
+            left: 2%;
+        }
+
+        .home-support {
+            bottom: 1%;
+            top: auto;
+            left: 5%;
+            right: auto;
+        }
+
+        .home-guaranteed {
+            bottom: 1%;
+            top: auto;
+            right: 5%;
+            left: auto;
+        }
+    }
+
+    @keyframes circle768 {
+        0% {
+            top: 40%;
+            left: 48%;
+        }
+
+        50% {
+            top: 54%;
+            left: 48.5%;
+        }
+
+        100% {
+            top: 40%;
+            left: 48%;
+        }
+    }
+
+    .home-typewriter {
+
+        .home-best {
+            font-size: 0.97rem;
+
+            span {
+                font-size: 0.97rem;
+            }
+        }
+    }
+
+    .home-footer {
+        display: block;
+        font-size: 1rem;
+
+        .home-footer-info {
+            width: 100%;
+            padding: 2% 5%;
+
+            .home-logo-image {
+                margin-bottom: 0;
+            }
+        }
+
+        .home-services {
+            width: 100%;
+            padding: 2% 5%;
+
+            .home-services-head {
+                margin-bottom: 20px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 2px;
+                }
+            }
+        }
+
+        .home-contact-us {
+            width: 100%;
+            padding: 1% 5% 2% 5%;
+
+            .home-contact-head {
+                margin-bottom: 20px;
+            }
+
+            .home-contacts {
+
+                .home-phone {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 562px) {
+    div#slider {
+
+        figure {
+
+            img {
+                height: 70vh;
+            }
+        }
+
+        .text {
+            font-size: 1.6rem;
+            width: 80%;
+            top: 35%;
+        }
+
+        .small-text {
+            font-size: 1.2rem;
+            width: 80%;
+            top: 50%;
+        }
+
+        .btn {
+            top: 65%;
+        }
+    }
+
+    .home-card {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .home-card-info {
+        p {
+            margin-top: 22%;
+        }
+    }
+
+    .display {
+        margin-top: 2rem;
+
+        .dis {
+            margin-bottom: 2rem;
+
+            .disp {
+                width: 85%;
+
+                .display-head {
+                    font-size: 1.5rem;
+                    margin-bottom: 0.2rem;
+                }
+
+                .display-subhead {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .galleries{
+            text-align: center;
+            margin-left: 0;
+        }
+
+        .gallery-1 {
+            #living-room {
+                width: 75%;
+            }
+        }
+
+        .gallery-2{
+
+            #master-bedroom{
+                width: 75%;
+                margin-left: 0;
+                margin-top: 8px;
+            }
+
+            #master-head{
+                left: 1%;
+            }
+        }
+
+        .gallery-3{
+
+            #balcony{
+                width: 75%;
+                margin-left: 0;
+                margin-top: 8px;
+            }
+
+            #balcony-head{
+                left: 1%;
+            }
+        }
+
+        .gallery-4{
+
+            #bathroom{
+                width: 75%;
+                margin-left: 0;
+            }
+
+            #bathroom-head{
+                left: 1%;
+            }
+        }
+
+        .gallery-5{
+
+            #kitchen{
+                width: 75%;
+                margin-left: 0;
+            }
+
+            #kitchen-head{
+                left: 1%;
+            }
+        }
+
+        .gallery-6{
+
+            #wardrobe{
+                width: 75%;
+                margin-left: 0;
+            }
+
+            #wardrobe-head{
+                left: 1%;
+            }
+        }
+    }
+
+    .choice-container{
+        margin-top: 2rem;
+        font-size: 1.6rem;
+
+        .choice-head{
+            padding: 10px;
+        }
+
+        .home-container{
+            padding-top: 85%;
+            padding-bottom: 90%;
+            text-align: center;
+        }
+
+        .circular-image{
+            width: 55vw;
+            height: 35vh;
+        }
+
+        .rotate-image{
+            width: 13vw;
+            height: 7vh;
+            left: 14%;
+            top: 45%;
+            animation: circle562 10s infinite linear;
+        }
+
+        .light-background{
+            width: 85vw;
+
+            p{
+                font-size: 0.8rem;
+            }
+        }
+
+        .dark-background{
+            width: 85vw;
+
+            p{
+                font-size: 0.8rem;
+            }
+        }
+
+        .home-interior {
+            top: 1%;
+        }
+
+        .home-number{
+            top: 14%;
+        }
+
+        .home-consultation {
+            top: 26.5%;
+            left: 4%;
+        }
+
+        .home-affordable {
+            top: 63%;
+            right: 4%;
+            left: auto;
+        }
+
+        .home-guaranteed {
+            bottom: 15%;
+            top: auto;
+            left: 4%;
+            right: auto;
+        }
+
+        .home-support {
+            bottom: 2%;
+            top: auto;
+            right: 4%;
+            left: auto;
+        }
+    }
+
+    @keyframes circle562 {
+        0% {
+            top: 45%;
+            left: 14%;
+        }
+
+        50% {
+            top: 51%;
+            left: 14.5%;
+        }
+
+        100% {
+            top: 45%;
+            left: 14%;
+        }
+    }
+
+    .home-typewriter{
+
+        .home-best{
+            font-size: 0.6rem;
+
+            span{
+                font-size: 0.6rem;
+                margin-left: 1px;
+            }
+        }
+    }
+
+    .home-footer{
+
+        .home-footer-info{
+            padding: 1% 5%;
+
+            .home-logo-image{
+                margin-bottom: 0;
+            }
+        }
+
+        .home-services{
+            
+            .home-services-head{
+                margin-bottom: 20px;
+            }
+        }
+
+        .home-contact-us{
+
+            .home-contact-head{
+                margin-bottom: 20px;
+            }
+
+            .home-contacts{
+                margin-bottom: 10px;
+
+                .home-phone{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .choice-container{
+        margin-top: 2rem;
+        font-size: 1.6rem;
+
+        .choice-head{
+            padding: 10px;
+        }
+
+        .home-container{
+            padding-top: 110%;
+            padding-bottom: 110%;
+            text-align: center;
+        }
+
+        .circular-image{
+            width: 60vw;
+            height: 30vh;
+        }
+
+        .home-number{
+            top: 15%;
+        }
+
+        .home-consultation {
+            top: 28%;
+        }
+
+        .home-affordable {
+            top: 62%;
+        }
+
+        .home-guaranteed {
+            bottom: 13%;
+        }
+
+        .home-support {
+            bottom: 0%;
+        }
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .choice-container{
+
+        .home-container{
+            padding-top: 170%;
+            padding-bottom: 170%;
+        }
+
+        .circular-image{
+            width: 70vw;
+            height: 30vh;
+        }
+
+        .rotate-image{
+            width: 14vw;
+            height: 6vh;
+            left: 8%;
+            top: 45%;
+            animation: circle380 10s infinite linear;
+        }
+
+        .home-consultation {
+            top: 30%;
+        }
+
+        .home-affordable {
+            top: 61%;
+        }
+
+        .home-guaranteed {
+            bottom: 14%;
+        }
+
+        .home-support {
+            bottom: 1.5%;
+        }
+    }
+
+    @keyframes circle380 {
+        0% {
+            top: 45%;
+            left: 8%;
+        }
+
+        50% {
+            top: 51%;
+            left: 8.5%;
+        }
+
+        100% {
+            top: 45%;
+            left: 8%;
         }
     }
 }

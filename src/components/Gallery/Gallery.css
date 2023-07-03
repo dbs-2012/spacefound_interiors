@@ -15,7 +15,7 @@
   left: 28%;
 }
 .gallery-container .display .vase-1 img {
-  width: 150px;
+  width: 27%;
 }
 .gallery-container .display .vase-2 {
   position: absolute;
@@ -23,14 +23,14 @@
   left: 62%;
 }
 .gallery-container .display .vase-2 img {
-  width: 150px;
+  width: 27%;
 }
 .gallery-container .display .gallery-container-info {
   position: absolute;
   font-size: 3rem;
   width: 20%;
   top: 38%;
-  left: 10%;
+  left: 8%;
   letter-spacing: 0.05rem;
   word-spacing: 0.1rem;
   font-weight: 700;
@@ -44,7 +44,7 @@
 }
 .gallery-container .display .img-1 img {
   padding: 10px;
-  width: 200px;
+  width: 14vw;
 }
 .gallery-container .display .img-4 {
   position: absolute;
@@ -55,7 +55,7 @@
 }
 .gallery-container .display .img-4 img {
   padding: 17px;
-  width: 150px;
+  width: 10vw;
 }
 .gallery-container .display .img-3 {
   position: absolute;
@@ -66,7 +66,7 @@
 }
 .gallery-container .display .img-3 img {
   padding: 20px;
-  width: 150px;
+  width: 10vw;
 }
 .gallery-container .display .img-2 {
   position: absolute;
@@ -77,13 +77,13 @@
 }
 .gallery-container .display .img-2 img {
   padding: 20px;
-  width: 200px;
+  width: 14vw;
 }
 .gallery-container .display .outerRect {
   border: 20px solid #90ADC6;
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 35vw;
+  height: 67vh;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -92,9 +92,9 @@
 }
 .gallery-container .display .outerRect .innerRect {
   position: absolute;
-  width: 460px;
-  height: 460px;
-  bottom: -50%;
+  width: 32.5vw;
+  height: auto;
+  bottom: -52%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-top-left-radius: 50%;
@@ -106,16 +106,17 @@
   width: 500%;
   margin: 0;
   left: 0;
-  animation: 10s slidy infinite;
+  -webkit-animation: 10s slidy infinite;
+          animation: 10s slidy infinite;
 }
 .gallery-container .display .outerRect .innerRect figure img {
-  width: 460px;
-  height: 460px;
+  width: 32.5vw;
+  height: 62.5vh;
 }
 .gallery-container .display .consultant-form {
   position: absolute;
   top: 30%;
-  right: 2%;
+  right: 1.5%;
   background-color: white;
   width: 27%;
   padding: 30px;
@@ -154,6 +155,36 @@
 }
 .gallery-container .display .consultant-form .submit input:hover {
   background-color: #085f84;
+}
+
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
 }
 
 @keyframes slidy {
@@ -212,6 +243,7 @@
 .gallery-pics-container .galleries {
   margin-left: 4rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 .gallery-pics-container .gallery-1 {
   position: relative;
@@ -325,17 +357,17 @@
   display: inline;
   cursor: pointer;
 }
-.gallery-pics-container .gallery-5 #office {
+.gallery-pics-container .gallery-5 #wardrobe {
   width: 30%;
   height: 40vh;
   border-radius: 10px;
   margin-left: 20px;
   margin-top: 20px;
 }
-.gallery-pics-container .gallery-5 #office:hover {
+.gallery-pics-container .gallery-5 #wardrobe:hover {
   transform: scale(1.05);
 }
-.gallery-pics-container .gallery-5 #office-head {
+.gallery-pics-container .gallery-5 #wardrobe-head {
   position: absolute;
   bottom: 40%;
   left: 6%;
@@ -417,7 +449,7 @@
   border: 3px solid #a36f76;
 }
 .gallery-consultation-container .gallery-consultation #consultation-1 img {
-  width: 100px;
+  width: 7vw;
   padding: 15px;
 }
 .gallery-consultation-container .gallery-consultation #consultation-2 {
@@ -428,7 +460,7 @@
   border: 3px solid #a36f76;
 }
 .gallery-consultation-container .gallery-consultation #consultation-2 img {
-  width: 100px;
+  width: 7vw;
   padding: 15px;
 }
 .gallery-consultation-container .gallery-consultation .consultation-btn {
@@ -452,11 +484,23 @@
   transform: scale(1.02);
 }
 
-.gallery-steps-container {
-  position: relative;
+.gallery-steps-container .gallery-steps-head-container {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-steps-container .gallery-steps-head-container .gallery-steps-head {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 20px;
+  color: #143f64;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
 }
 .gallery-steps-container .gallery-steps {
-  margin-top: 50px;
   padding: 20px;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -469,7 +513,7 @@
   text-align: center;
   padding: 20px;
   width: 100%;
-  height: 85%;
+  height: 80%;
 }
 .gallery-steps-container .gallery-steps .steps .steps-image img {
   width: 50%;
@@ -501,35 +545,20 @@
   background-color: #2F5061;
 }
 .gallery-typewriter .gallery-best {
-  padding: 30px;
+  padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: "Red Hat Display";
   font-weight: 700;
   color: #ECFDF1;
-  width: 90%;
+  width: 100%;
 }
-.gallery-typewriter .gallery-contact {
-  right: 5%;
-  top: 30%;
-  position: absolute;
-}
-.gallery-typewriter .gallery-contact button {
-  font-size: 1.2rem;
-  font-weight: 400;
-  padding: 10px;
-  outline: none;
-  border: 1px solid #ECFDF1;
-  border-radius: 10px;
-  background-color: #2F5061;
-  color: #ECFDF1;
-  cursor: pointer;
-}
-.gallery-typewriter .gallery-contact button:hover {
-  border: 1px solid #a4a5a4;
-  color: #a4a5a4;
+.gallery-typewriter .gallery-best span {
+  font-size: 1.9rem;
+  font-family: "Red Hat Display";
+  font-weight: 700;
 }
 
 .gallery-footer {
@@ -613,4 +642,640 @@
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-}/*# sourceMappingURL=Gallery.css.map */
+}
+
+@media only screen and (max-width: 1280px) {
+  .gallery-container .display .vase-1 {
+    left: 23%;
+  }
+  .gallery-container .display .vase-2 {
+    left: 66%;
+  }
+  .gallery-container .display .gallery-container-info {
+    top: 37%;
+    left: 7%;
+    width: 25%;
+  }
+  .gallery-container .display .img-4 {
+    top: 12%;
+  }
+  .gallery-container .display .img-3 {
+    left: 10%;
+  }
+  .gallery-container .display .outerRect {
+    width: 42vw;
+    height: 67.5vh;
+  }
+  .gallery-container .display .outerRect .innerRect {
+    width: 39vw;
+    bottom: -51%;
+  }
+  .gallery-container .display .outerRect .innerRect figure img {
+    width: 39vw;
+  }
+  .gallery-consultation-container .gallery-consultation .consultation-head {
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .gallery-container .display .vase-1 {
+    left: 19%;
+  }
+  .gallery-container .display .vase-1 img {
+    width: 24%;
+  }
+  .gallery-container .display .vase-2 {
+    left: 64%;
+  }
+  .gallery-container .display .vase-2 img {
+    width: 29%;
+  }
+  .gallery-container .display .img-3 {
+    left: 5%;
+  }
+  .gallery-container .display .img-3 img {
+    width: 12vw;
+  }
+  .gallery-container .display .img-4 {
+    top: 10%;
+    left: 30%;
+  }
+  .gallery-container .display .img-4 img {
+    width: 12vw;
+  }
+  .gallery-container .display .gallery-container-info {
+    font-size: 2.5rem;
+    left: 4%;
+    width: 25%;
+  }
+  .gallery-container .display .outerRect {
+    width: 44vw;
+    left: 47%;
+  }
+  .gallery-container .display .outerRect .innerRect {
+    width: 41vw;
+  }
+  .gallery-container .display .outerRect .innerRect figure img {
+    width: 41vw;
+  }
+  .gallery-container .display .consultant-form {
+    width: 29%;
+    right: 1%;
+    padding: 25px;
+  }
+  .gallery-container .display .consultant-form input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .gallery-pics-container {
+    padding: 5% 7%;
+  }
+  .gallery-pics-container .gallery-head .gall-head {
+    padding-bottom: 15px;
+    font-size: 2.2rem;
+  }
+  .gallery-pics-container .gallery-head .gallery-subhead {
+    font-size: 1.1rem;
+  }
+  .gallery-pics-container .galleries {
+    margin-left: 0;
+    text-align: center;
+  }
+  .gallery-pics-container .gallery-1 #living-room {
+    height: 35vh;
+    width: 32%;
+  }
+  .gallery-pics-container .gallery-2 #kitchen {
+    height: 35vh;
+    width: 32%;
+    margin-left: 15px;
+  }
+  .gallery-pics-container .gallery-3 #master {
+    height: 35vh;
+    width: 32%;
+    margin-left: 15px;
+  }
+  .gallery-pics-container .gallery-4 #bathroom {
+    height: 35vh;
+    width: 32%;
+    margin-top: 15px;
+  }
+  .gallery-pics-container .gallery-5 #wardrobe {
+    height: 35vh;
+    width: 32%;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  .gallery-pics-container .gallery-6 #gallery-balcony {
+    height: 35vh;
+    width: 32%;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  .gallery-consultation-container .gallery-consultation {
+    width: 60%;
+  }
+  .gallery-consultation-container .gallery-consultation .consultation-head {
+    font-size: 2.2rem;
+  }
+  .gallery-consultation-container .gallery-consultation .consultation {
+    font-size: 1.5rem;
+  }
+  .gallery-consultation-container .gallery-consultation #consultation-1 {
+    top: 46%;
+    left: 17%;
+  }
+  .gallery-consultation-container .gallery-consultation #consultation-1 img {
+    padding: 8px;
+  }
+  .gallery-consultation-container .gallery-consultation #consultation-2 {
+    left: 17%;
+  }
+  .gallery-consultation-container .gallery-consultation #consultation-2 img {
+    padding: 5px;
+  }
+  .gallery-steps-container .gallery-steps-head-container .gallery-steps-head {
+    font-size: 2rem;
+  }
+  .gallery-steps-container .gallery-steps .steps .steps-image {
+    height: 60%;
+  }
+  .gallery-steps-container .gallery-steps .steps .steps-text {
+    font-size: 1.1rem;
+  }
+  .gallery-steps-container .gallery-steps .steps .steps-text p {
+    width: 90%;
+  }
+  .gallery-typewriter {
+    height: auto;
+  }
+  .gallery-typewriter .gallery-best {
+    padding: 20px 0;
+    font-size: 1.3rem;
+  }
+  .gallery-typewriter .gallery-best span {
+    font-size: 1.3rem;
+  }
+  .gallery-footer {
+    font-size: 1.1rem;
+  }
+  .gallery-footer .gallery-footer-info {
+    width: 40%;
+    padding: 5% 1%;
+  }
+  .gallery-footer .gallery-footer-info .gallery-logo-image {
+    margin-bottom: 10px;
+  }
+  .gallery-footer .gallery-footer-info p {
+    padding: 0 5px;
+  }
+  .gallery-footer .gallery-services {
+    width: 30%;
+    padding: 8% 1%;
+  }
+  .gallery-footer .gallery-services .gallery-services-head {
+    font-size: 1.5rem;
+  }
+  .gallery-footer .gallery-contact-us {
+    width: 30%;
+    padding: 8% 1% 8% 0%;
+  }
+  .gallery-footer .gallery-contact-us .gallery-contact-head {
+    font-size: 1.5rem;
+  }
+  .gallery-footer .gallery-contact-us .gallery-contacts {
+    margin-left: 5px;
+  }
+  .gallery-footer .gallery-contact-us .gallery-contacts p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .gallery-container {
+    height: 90vh;
+  }
+  .gallery-container .display {
+    height: 80vh;
+  }
+  .gallery-container .display .vase-1 {
+    left: 21%;
+  }
+  .gallery-container .display .vase-1 img {
+    width: 19%;
+  }
+  .gallery-container .display .vase-2 {
+    left: 62%;
+  }
+  .gallery-container .display .gallery-container-info {
+    font-size: 2rem;
+    width: 28%;
+    left: 3%;
+  }
+  .gallery-container .display .img-4 {
+    top: 24%;
+  }
+  .gallery-container .display .img-4 img {
+    width: 13vw;
+  }
+  .gallery-container .display .img-3 img {
+    width: 13vw;
+  }
+  .gallery-container .display .img-2 {
+    top: 15%;
+    left: 60%;
+  }
+  .gallery-container .display .img-2 img {
+    width: 15vw;
+  }
+  .gallery-container .display .outerRect {
+    width: 40vw;
+    height: 50vh;
+  }
+  .gallery-container .display .outerRect .innerRect {
+    width: 37vw;
+    bottom: -50%;
+    height: 45vh;
+  }
+  .gallery-container .display .outerRect .innerRect figure img {
+    width: 37vw;
+    height: 45vh;
+  }
+  .gallery-container .display .consultant-form {
+    width: 31%;
+    padding: 20px;
+  }
+  .gallery-container .display .consultant-form .form-head {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  .gallery-container .display .consultant-form input {
+    margin-bottom: 10px;
+  }
+  .gallery-container .display .consultant-form .submit {
+    margin-top: 10px;
+  }
+  .gallery-container .display .consultant-form .submit input {
+    font-size: 1.1rem;
+  }
+  .gallery-pics-container .gallery-1 #living-room {
+    width: 45%;
+  }
+  .gallery-pics-container .gallery-2 #kitchen {
+    height: 35vh;
+    width: 45%;
+    margin-left: 15px;
+  }
+  .gallery-pics-container .gallery-3 #master {
+    width: 45%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  .gallery-pics-container .gallery-3 #master-head {
+    left: 2%;
+  }
+  .gallery-pics-container .gallery-4 #bathroom {
+    width: 45%;
+    margin-left: 15px;
+  }
+  .gallery-pics-container .gallery-4 #bath-head {
+    left: 6%;
+  }
+  .gallery-pics-container .gallery-5 #wardrobe {
+    width: 45%;
+    margin-left: 0;
+  }
+  .gallery-pics-container .gallery-5 #wardrobe-head {
+    left: 2%;
+  }
+  .gallery-pics-container .gallery-6 #gallery-balcony {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .gallery-container {
+    height: 80vh;
+  }
+  .gallery-container .display {
+    height: 70vh;
+  }
+  .gallery-container .display .vase-2 {
+    left: 59%;
+  }
+  .gallery-container .display .vase-1 {
+    left: 18%;
+  }
+  .gallery-container .display .img-4 {
+    top: 22%;
+  }
+  .gallery-container .display .img-2 {
+    top: 10%;
+  }
+  .gallery-container .display .img-3 {
+    left: 4%;
+  }
+  .gallery-container .display .gallery-container-info {
+    font-size: 1.6rem;
+    width: 30%;
+    top: 35%;
+  }
+  .gallery-container .display .outerRect {
+    left: 45%;
+    height: 45vh;
+  }
+  .gallery-container .display .outerRect .innerRect {
+    height: 40vh;
+  }
+  .gallery-container .display .consultant-form {
+    top: 25%;
+  }
+  .gallery-container .display .consultant-form .form-head {
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .gallery-container .display .consultant-form input {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+  .gallery-pics-container {
+    padding: 3% 5%;
+  }
+  .gallery-consultation-container .gallery-consultation {
+    width: 70%;
+  }
+  .gallery-consultation-container .gallery-consultation .consultation-head {
+    font-size: 1.8rem;
+  }
+  .gallery-consultation-container .gallery-consultation .consultation {
+    font-size: 1.2rem;
+  }
+  .gallery-consultation-container .gallery-consultation #consultation-1 {
+    left: 15%;
+    top: 47%;
+  }
+  .gallery-consultation-container .gallery-consultation #consultation-2 {
+    left: 15%;
+    top: 64%;
+  }
+  .gallery-steps-container .gallery-steps-head-container .gallery-steps-head {
+    font-size: 1.6rem;
+  }
+  .gallery-steps-container .gallery-steps .steps .steps-image {
+    height: 50%;
+  }
+  .gallery-steps-container .gallery-steps .steps .steps-text {
+    font-size: 1rem;
+  }
+  .gallery-steps-container .gallery-steps .steps .steps-text p {
+    width: 120%;
+  }
+  .gallery-typewriter .gallery-best {
+    font-size: 0.97rem;
+  }
+  .gallery-typewriter .gallery-best span {
+    font-size: 0.97rem;
+  }
+  .gallery-footer {
+    display: block;
+    font-size: 1rem;
+  }
+  .gallery-footer .gallery-footer-info {
+    width: 100%;
+    padding: 2% 5%;
+  }
+  .gallery-footer .gallery-footer-info .gallery-logo-image {
+    margin-bottom: 0;
+  }
+  .gallery-footer .gallery-services {
+    width: 100%;
+    padding: 2% 5%;
+  }
+  .gallery-footer .gallery-services .gallery-services-head {
+    margin-bottom: 20px;
+  }
+  .gallery-footer .gallery-services ul li {
+    margin-bottom: 2px;
+  }
+  .gallery-footer .gallery-contact-us {
+    width: 100%;
+    padding: 1% 5% 2% 5%;
+  }
+  .gallery-footer .gallery-contact-us .gallery-contact-head {
+    margin-bottom: 20px;
+  }
+  .gallery-footer .gallery-contact-us .gallery-contacts .gallery-phone {
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width: 562px) {
+  .gallery-container {
+    width: 100%;
+    height: 110vh;
+    background-color: #ebeaea;
+  }
+  .gallery-container .display {
+    height: 50vh;
+  }
+  .gallery-container .display .gallery-container-info {
+    font-size: 1.2rem;
+    width: 35%;
+  }
+  .gallery-container .display .vase-1 {
+    left: 31%;
+  }
+  .gallery-container .display .vase-1 img {
+    width: 15%;
+  }
+  .gallery-container .display .vase-2 {
+    left: 80%;
+  }
+  .gallery-container .display .vase-2 img {
+    width: 50%;
+  }
+  .gallery-container .display .img-4 {
+    top: 15%;
+    left: 35%;
+    border: 3px solid #90ADC6;
+  }
+  .gallery-container .display .img-4 img {
+    padding: 10px;
+    width: 16vw;
+  }
+  .gallery-container .display .img-1 {
+    border: 3px solid #90ADC6;
+  }
+  .gallery-container .display .img-1 img {
+    padding: 10px;
+    width: 18vw;
+  }
+  .gallery-container .display .img-3 {
+    border: 3px solid #90ADC6;
+    left: 10%;
+    top: 80%;
+  }
+  .gallery-container .display .img-3 img {
+    padding: 10px;
+    width: 14vw;
+  }
+  .gallery-container .display .img-2 {
+    border: 3px solid #90ADC6;
+    top: 22%;
+    left: 80%;
+  }
+  .gallery-container .display .img-2 img {
+    padding: 10px;
+    width: 16vw;
+  }
+  .gallery-container .display .outerRect {
+    border: 15px solid #90ADC6;
+    height: 35vh;
+    width: 50vw;
+    left: 60%;
+  }
+  .gallery-container .display .outerRect .innerRect {
+    height: 32vh;
+    width: 45vw;
+    bottom: -52%;
+  }
+  .gallery-container .display .outerRect .innerRect figure img {
+    width: 45vw;
+    height: 32vh;
+  }
+  .gallery-container .display .consultant-form {
+    top: 110%;
+    right: 22%;
+    width: 55%;
+    border-radius: 10px;
+  }
+  .gallery-container .display .consultant-form .form-head {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .gallery-container .display .consultant-form input {
+    border-radius: 5px;
+  }
+  .gallery-pics-container {
+    padding: 2%;
+    width: 100%;
+  }
+  .gallery-pics-container .gallery-head {
+    margin-bottom: 20px;
+    padding-top: 5%;
+  }
+  .gallery-pics-container .gallery-head .gall-head {
+    font-size: 1.5rem;
+  }
+  .gallery-pics-container .gallery-head .gallery-subhead {
+    font-size: 0.8rem;
+  }
+  .gallery-pics-container .gallery-1 #living-room {
+    width: 80%;
+  }
+  .gallery-pics-container .gallery-2 #kitchen {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .gallery-pics-container .gallery-2 #kitchen-head {
+    left: 2%;
+  }
+  .gallery-pics-container .gallery-3 #master {
+    width: 80%;
+    margin-left: 0;
+  }
+  .gallery-pics-container .gallery-4 #bathroom {
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  .gallery-pics-container .gallery-4 #bath-head {
+    left: 2%;
+  }
+  .gallery-pics-container .gallery-5 #wardrobe {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .gallery-pics-container .gallery-6 #gallery-balcony {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .gallery-pics-container .gallery-6 #balcony-head {
+    left: 2%;
+  }
+  .gallery-consultation-container .gallery-consultation {
+    width: 90%;
+  }
+  .gallery-consultation-container .gallery-consultation .consultation-head {
+    font-size: 1.2rem;
+  }
+  .gallery-consultation-container .gallery-consultation .consultation {
+    font-size: 0.8rem;
+  }
+  .gallery-consultation-container .gallery-consultation #consultation-1 {
+    left: 11%;
+    top: 45%;
+    border: 2px solid #a36f76;
+  }
+  .gallery-consultation-container .gallery-consultation #consultation-1 img {
+    padding: 5px;
+  }
+  .gallery-consultation-container .gallery-consultation #consultation-2 {
+    left: 11%;
+    top: 61%;
+    border: 2px solid #a36f76;
+  }
+  .gallery-consultation-container .gallery-consultation #consultation-2 img {
+    padding: 5px;
+  }
+  .gallery-consultation-container .gallery-consultation .consultation-btn button {
+    font-size: 0.9rem;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .gallery-steps-container .gallery-steps-head-container .gallery-steps-head {
+    font-size: 1.4rem;
+  }
+  .gallery-steps-container .gallery-steps {
+    grid-template-columns: auto auto;
+  }
+  .gallery-steps-container .gallery-steps .steps .steps-image {
+    height: 60%;
+  }
+  .gallery-steps-container .gallery-steps .steps .steps-image img {
+    width: 70%;
+  }
+  .gallery-steps-container .gallery-steps .steps .steps-text {
+    font-size: 0.8rem;
+  }
+  .gallery-steps-container .gallery-steps .steps .steps-text p {
+    width: 130%;
+  }
+  .gallery-typewriter .gallery-best {
+    font-size: 0.6rem;
+  }
+  .gallery-typewriter .gallery-best span {
+    font-size: 0.6rem;
+    margin-left: 1px;
+  }
+  .gallery-footer .gallery-footer-info {
+    padding: 1% 5%;
+  }
+  .gallery-footer .gallery-footer-info .gallery-logo-image {
+    margin-bottom: 0;
+  }
+  .gallery-footer .gallery-services .gallery-services-head {
+    margin-bottom: 20px;
+  }
+  .gallery-footer .gallery-contact-us .gallery-contact-head {
+    margin-bottom: 20px;
+  }
+  .gallery-footer .gallery-contact-us .gallery-contacts {
+    margin-bottom: 10px;
+  }
+  .gallery-footer .gallery-contact-us .gallery-contacts .gallery-phone {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=Gallery.css.map */

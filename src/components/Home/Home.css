@@ -1,4 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Aref+Ruqaa+Ink:wght@700&family=Lato:ital,wght@0,400;1,100;1,300&family=Lobster+Two&family=Montserrat:wght@400;500&family=Pathway+Extreme:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
 @keyframes slidy {
   0% {
     left: 0%;
@@ -38,7 +67,8 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 10s slidy infinite;
+  -webkit-animation: 10s slidy infinite;
+          animation: 10s slidy infinite;
   opacity: 0.7;
 }
 div#slider figure img {
@@ -49,6 +79,7 @@ div#slider figure img {
 div#slider .text {
   position: absolute;
   top: 50%;
+  text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
@@ -60,6 +91,7 @@ div#slider .small-text {
   position: absolute;
   top: 65%;
   left: 50%;
+  text-align: center;
   transform: translate(-50%, -50%);
   font-family: "Lato", sans-serif;
   font-style: italic;
@@ -90,7 +122,7 @@ div#slider .btn:hover {
   font-weight: 700;
   font-family: "Lato", sans-serif;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
   color: #042d3e;
 }
 .info #we {
@@ -100,14 +132,16 @@ div#slider .btn:hover {
 
 .home-cards {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-card {
   width: 25%;
   margin-top: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 350px;
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 47vh;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -119,7 +153,8 @@ div#slider .btn:hover {
 }
 .home-card img {
   opacity: 0.7;
-  height: 350px;
+  height: 100%;
+  width: 100%;
 }
 
 .home-card-head {
@@ -128,7 +163,8 @@ div#slider .btn:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.5rem;
-  width: 270px;
+  text-align: center;
+  width: 100%;
   font-weight: 700;
   color: #0C2D48;
 }
@@ -138,21 +174,24 @@ div#slider .btn:hover {
 
 .home-card-info {
   position: absolute;
-  height: 350px;
+  height: 100%;
   visibility: hidden;
   opacity: 0;
+  width: 100%;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .home-card-info p {
   font-size: 1.1rem;
-  width: 250px;
-  margin: 70px 50px;
+  width: 80%;
   text-align: center;
   letter-spacing: 0.08rem;
 }
 
 .home-card:hover .home-card-info {
-  height: 350px;
+  height: 47vh;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
@@ -161,14 +200,6 @@ div#slider .btn:hover {
 
 .home-card:hover .home-card-head {
   display: none;
-}
-
-#second {
-  width: 280px;
-}
-
-#third {
-  width: 190px;
 }
 
 .display {
@@ -216,6 +247,7 @@ div#slider .btn:hover {
 .display .gallery-1 #living-room {
   width: 45%;
   border-radius: 10px;
+  height: 42.5vh;
 }
 .display .gallery-1 #living-room:hover {
   transform: scale(1.01);
@@ -387,12 +419,13 @@ div#slider .btn:hover {
 }
 .choice-container .home-container {
   position: relative;
-  margin-top: 70px;
-  padding-bottom: 100px;
+  margin-top: 5%;
+  padding-bottom: 20%;
+  padding-top: 10%;
 }
 .choice-container .circular-image {
-  width: 500px;
-  height: 500px;
+  width: 30vw;
+  height: 60vh;
   border-radius: 50%;
   overflow: hidden;
   background-color: #EEEDE7;
@@ -407,20 +440,21 @@ div#slider .btn:hover {
   height: 100%;
 }
 .choice-container .rotate-image {
-  width: 100px;
-  height: 100px;
+  width: 6vw;
+  height: 12vh;
   border-radius: 50%;
   overflow: hidden;
   background-color: #EEEDE7;
   display: inline-block;
   vertical-align: middle;
   position: absolute;
-  left: 28%;
-  top: 25%;
-  animation: circle 10s infinite linear;
+  left: 32%;
+  top: 28%;
+  -webkit-animation: circle 10s infinite linear;
+          animation: circle 10s infinite linear;
 }
 .choice-container .light-background {
-  width: 280px;
+  width: 18vw;
   position: absolute;
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -446,7 +480,7 @@ div#slider .btn:hover {
   left: 10%;
 }
 .choice-container .dark-background {
-  width: 280px;
+  width: 18vw;
   position: absolute;
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -470,12 +504,12 @@ div#slider .btn:hover {
 }
 .choice-container .home-affordable {
   position: absolute;
-  top: 40%;
-  left: 3%;
+  top: 35%;
+  left: 2%;
 }
 .choice-container .home-guaranteed {
   position: absolute;
-  top: 73%;
+  top: 62%;
   left: 10%;
 }
 .choice-container .home-number {
@@ -485,66 +519,66 @@ div#slider .btn:hover {
 }
 .choice-container .home-consultation {
   position: absolute;
-  top: 41%;
-  right: 3%;
+  top: 35%;
+  right: 2%;
 }
 .choice-container .home-support {
   position: absolute;
-  top: 75%;
+  top: 64%;
   right: 10%;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    top: 28%;
+    left: 32%;
+  }
+  50% {
+    top: 50%;
+    left: 32.5%;
+  }
+  100% {
+    top: 25%;
+    left: 32%;
+  }
 }
 
 @keyframes circle {
   0% {
-    top: 25%;
-    left: 30%;
+    top: 28%;
+    left: 32%;
   }
   50% {
     top: 50%;
-    left: 30.5%;
+    left: 32.5%;
   }
   100% {
     top: 25%;
-    left: 30%;
+    left: 32%;
   }
 }
 .home-typewriter {
   position: relative;
   height: 100px;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 50px;
   background-color: #2F5061;
 }
 .home-typewriter .home-best {
-  padding: 30px;
+  padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: "Red Hat Display";
   font-weight: 700;
   color: #ECFDF1;
-  width: 90%;
+  width: 100%;
 }
-.home-typewriter .home-contact {
-  right: 5%;
-  top: 30%;
-  position: absolute;
-}
-.home-typewriter .home-contact button {
-  font-size: 1.2rem;
-  font-weight: 400;
-  padding: 10px;
-  outline: none;
-  border: 1px solid #ECFDF1;
-  border-radius: 10px;
-  background-color: #2F5061;
-  color: #ECFDF1;
-  cursor: pointer;
-}
-.home-typewriter .home-contact button:hover {
-  border: 1px solid #a4a5a4;
-  color: #a4a5a4;
+.home-typewriter .home-best span {
+  font-size: 1.9rem;
+  font-family: "Red Hat Display";
+  font-weight: 700;
 }
 
 .home-footer {
@@ -628,4 +662,697 @@ div#slider .btn:hover {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-}/*# sourceMappingURL=Home.css.map */
+}
+
+@media only screen and (max-width: 1230px) {
+  .choice-container .circular-image {
+    width: 35vw;
+    height: 55vh;
+  }
+  .choice-container .rotate-image {
+    width: 7vw;
+    height: 11vh;
+    top: 30%;
+    left: 30%;
+    -webkit-animation: circle1230 10s infinite linear;
+            animation: circle1230 10s infinite linear;
+  }
+  .choice-container .light-background {
+    width: 25vw;
+  }
+  .choice-container .dark-background {
+    width: 25vw;
+  }
+  .choice-container .home-interior {
+    left: 5%;
+  }
+  .choice-container .home-affordable {
+    top: 40%;
+  }
+  .choice-container .home-guaranteed {
+    left: 5%;
+    top: 67%;
+  }
+  .choice-container .home-number {
+    right: 5%;
+  }
+  .choice-container .home-consultation {
+    top: 40%;
+  }
+  .choice-container .home-support {
+    right: 5%;
+    top: 74%;
+  }
+  @-webkit-keyframes circle1230 {
+    0% {
+      top: 30%;
+      left: 30%;
+    }
+    50% {
+      top: 50%;
+      left: 30.5%;
+    }
+    100% {
+      top: 30%;
+      left: 30%;
+    }
+  }
+  @keyframes circle1230 {
+    0% {
+      top: 30%;
+      left: 30%;
+    }
+    50% {
+      top: 50%;
+      left: 30.5%;
+    }
+    100% {
+      top: 30%;
+      left: 30%;
+    }
+  }
+}
+@media only screen and (max-width: 1140px) {
+  div#slider .text {
+    font-size: 2.5rem;
+    width: 60%;
+  }
+  div#slider .small-text {
+    width: 60%;
+  }
+  .info {
+    margin-top: 30px;
+    font-size: 2.2rem;
+  }
+  .home-card {
+    width: 30%;
+    height: 37vh;
+    margin-top: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .home-card-head {
+    font-size: 1.25rem;
+  }
+  .home-card-info p {
+    width: 80%;
+    margin-top: 25%;
+  }
+  .display {
+    margin-top: 3rem;
+  }
+  .display .dis {
+    margin-bottom: 3rem;
+  }
+  .display .dis .disp {
+    width: 75%;
+  }
+  .display .dis .disp .display-head {
+    font-size: 2rem;
+  }
+  .display .galleries {
+    margin-left: 2rem;
+  }
+  .display .gallery-1 #living-room {
+    width: 60%;
+    height: 38vh;
+  }
+  .display .gallery-2 #master-bedroom {
+    width: 35%;
+    height: 38vh;
+  }
+  .display .gallery-3 #balcony {
+    width: 40%;
+    height: 38vh;
+    margin-left: 0;
+  }
+  .display .gallery-4 #bathroom {
+    width: 55%;
+    height: 38vh;
+    margin-left: 10px;
+  }
+  .display .gallery-5 #kitchen {
+    width: 45%;
+    height: 38vh;
+    margin-left: 0;
+  }
+  .display .gallery-6 #wardrobe {
+    width: 50%;
+    height: 38vh;
+  }
+  .home-typewriter {
+    height: auto;
+    margin-top: 10%;
+  }
+  .home-typewriter .home-best {
+    padding: 20px 0;
+    font-size: 1.3rem;
+  }
+  .home-typewriter .home-best span {
+    font-size: 1.3rem;
+  }
+  .home-footer {
+    font-size: 1.1rem;
+  }
+  .home-footer .home-footer-info {
+    width: 40%;
+    padding: 5% 1%;
+  }
+  .home-footer .home-footer-info .home-logo-image {
+    margin-bottom: 10px;
+  }
+  .home-footer .home-footer-info p {
+    padding: 0 5px;
+  }
+  .home-footer .home-services {
+    width: 30%;
+    padding: 8% 1%;
+  }
+  .home-footer .home-services .home-services-head {
+    font-size: 1.5rem;
+  }
+  .home-footer .home-contact-us {
+    width: 30%;
+    padding: 8% 1% 8% 0%;
+  }
+  .home-footer .home-contact-us .home-contact-head {
+    font-size: 1.5rem;
+  }
+  .home-footer .home-contact-us .home-contacts {
+    margin-left: 5px;
+  }
+  .home-footer .home-contact-us .home-contacts p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .choice-container .home-container {
+    padding-top: 25%;
+    padding-bottom: 32%;
+  }
+  .choice-container .circular-image {
+    width: 40vw;
+    height: 50vh;
+  }
+  .choice-container .rotate-image {
+    width: 8vw;
+    height: 10vh;
+    top: 40%;
+    left: 27%;
+    -webkit-animation: circle940 10s infinite linear;
+            animation: circle940 10s infinite linear;
+  }
+  .choice-container .light-background {
+    width: 27vw;
+    box-shadow: 1px 1px 10px 5px rgb(184, 184, 184);
+  }
+  .choice-container .dark-background {
+    width: 27vw;
+    box-shadow: 1px 1px 5px 1px rgb(184, 184, 184);
+  }
+  @-webkit-keyframes circle940 {
+    0% {
+      top: 40%;
+      left: 27%;
+    }
+    50% {
+      top: 60%;
+      left: 27.5%;
+    }
+    100% {
+      top: 40%;
+      left: 27%;
+    }
+  }
+  @keyframes circle940 {
+    0% {
+      top: 40%;
+      left: 27%;
+    }
+    50% {
+      top: 60%;
+      left: 27.5%;
+    }
+    100% {
+      top: 40%;
+      left: 27%;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  div#slider figure img {
+    height: 80vh;
+  }
+  div#slider .text {
+    font-size: 2rem;
+    width: 70%;
+    top: 40%;
+  }
+  div#slider .small-text {
+    width: 70%;
+    top: 55%;
+  }
+  div#slider .btn {
+    top: 70%;
+  }
+  .info {
+    font-size: 2rem;
+  }
+  .home-cards {
+    display: block;
+    text-align: center;
+  }
+  .home-card {
+    width: 75%;
+    text-align: center;
+    margin-top: 6%;
+    margin-left: 12%;
+  }
+  .home-card-info p {
+    margin-top: 20%;
+  }
+  .display {
+    margin-top: 2.5rem;
+  }
+  .display .dis {
+    margin-bottom: 2.5rem;
+  }
+  .display .dis .disp {
+    width: 80%;
+  }
+  .display .dis .disp .display-subhead {
+    font-size: 1rem;
+  }
+  .choice-container .home-container {
+    margin-top: 7%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    text-align: end;
+  }
+  .choice-container .circular-image {
+    width: 50vw;
+    height: 40vh;
+  }
+  .choice-container .rotate-image {
+    left: 48%;
+    width: 10vw;
+    height: 8vh;
+    -webkit-animation: circle768 10s infinite linear;
+            animation: circle768 10s infinite linear;
+  }
+  .choice-container .light-background {
+    width: 43vw;
+  }
+  .choice-container .light-background h3 {
+    font-size: 1.1rem;
+  }
+  .choice-container .dark-background {
+    width: 43vw;
+  }
+  .choice-container .dark-background h3 {
+    font-size: 1.1rem;
+  }
+  .choice-container .home-interior {
+    top: 1%;
+  }
+  .choice-container .home-number {
+    top: 1%;
+  }
+  .choice-container .home-affordable {
+    top: 30%;
+  }
+  .choice-container .home-consultation {
+    top: 50%;
+    left: 2%;
+  }
+  .choice-container .home-support {
+    bottom: 1%;
+    top: auto;
+    left: 5%;
+    right: auto;
+  }
+  .choice-container .home-guaranteed {
+    bottom: 1%;
+    top: auto;
+    right: 5%;
+    left: auto;
+  }
+  @-webkit-keyframes circle768 {
+    0% {
+      top: 40%;
+      left: 48%;
+    }
+    50% {
+      top: 54%;
+      left: 48.5%;
+    }
+    100% {
+      top: 40%;
+      left: 48%;
+    }
+  }
+  @keyframes circle768 {
+    0% {
+      top: 40%;
+      left: 48%;
+    }
+    50% {
+      top: 54%;
+      left: 48.5%;
+    }
+    100% {
+      top: 40%;
+      left: 48%;
+    }
+  }
+  .home-typewriter .home-best {
+    font-size: 0.97rem;
+  }
+  .home-typewriter .home-best span {
+    font-size: 0.97rem;
+  }
+  .home-footer {
+    display: block;
+    font-size: 1rem;
+  }
+  .home-footer .home-footer-info {
+    width: 100%;
+    padding: 2% 5%;
+  }
+  .home-footer .home-footer-info .home-logo-image {
+    margin-bottom: 0;
+  }
+  .home-footer .home-services {
+    width: 100%;
+    padding: 2% 5%;
+  }
+  .home-footer .home-services .home-services-head {
+    margin-bottom: 20px;
+  }
+  .home-footer .home-services ul li {
+    margin-bottom: 2px;
+  }
+  .home-footer .home-contact-us {
+    width: 100%;
+    padding: 1% 5% 2% 5%;
+  }
+  .home-footer .home-contact-us .home-contact-head {
+    margin-bottom: 20px;
+  }
+  .home-footer .home-contact-us .home-contacts .home-phone {
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width: 562px) {
+  div#slider figure img {
+    height: 70vh;
+  }
+  div#slider .text {
+    font-size: 1.6rem;
+    width: 80%;
+    top: 35%;
+  }
+  div#slider .small-text {
+    font-size: 1.2rem;
+    width: 80%;
+    top: 50%;
+  }
+  div#slider .btn {
+    top: 65%;
+  }
+  .home-card {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .home-card-info p {
+    margin-top: 22%;
+  }
+  .display {
+    margin-top: 2rem;
+  }
+  .display .dis {
+    margin-bottom: 2rem;
+  }
+  .display .dis .disp {
+    width: 85%;
+  }
+  .display .dis .disp .display-head {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+  .display .dis .disp .display-subhead {
+    font-size: 0.9rem;
+  }
+  .display .galleries {
+    text-align: center;
+    margin-left: 0;
+  }
+  .display .gallery-1 #living-room {
+    width: 75%;
+  }
+  .display .gallery-2 #master-bedroom {
+    width: 75%;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .display .gallery-2 #master-head {
+    left: 1%;
+  }
+  .display .gallery-3 #balcony {
+    width: 75%;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .display .gallery-3 #balcony-head {
+    left: 1%;
+  }
+  .display .gallery-4 #bathroom {
+    width: 75%;
+    margin-left: 0;
+  }
+  .display .gallery-4 #bathroom-head {
+    left: 1%;
+  }
+  .display .gallery-5 #kitchen {
+    width: 75%;
+    margin-left: 0;
+  }
+  .display .gallery-5 #kitchen-head {
+    left: 1%;
+  }
+  .display .gallery-6 #wardrobe {
+    width: 75%;
+    margin-left: 0;
+  }
+  .display .gallery-6 #wardrobe-head {
+    left: 1%;
+  }
+  .choice-container {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .choice-container .choice-head {
+    padding: 10px;
+  }
+  .choice-container .home-container {
+    padding-top: 85%;
+    padding-bottom: 90%;
+    text-align: center;
+  }
+  .choice-container .circular-image {
+    width: 55vw;
+    height: 35vh;
+  }
+  .choice-container .rotate-image {
+    width: 13vw;
+    height: 7vh;
+    left: 14%;
+    top: 45%;
+    -webkit-animation: circle562 10s infinite linear;
+            animation: circle562 10s infinite linear;
+  }
+  .choice-container .light-background {
+    width: 85vw;
+  }
+  .choice-container .light-background p {
+    font-size: 0.8rem;
+  }
+  .choice-container .dark-background {
+    width: 85vw;
+  }
+  .choice-container .dark-background p {
+    font-size: 0.8rem;
+  }
+  .choice-container .home-interior {
+    top: 1%;
+  }
+  .choice-container .home-number {
+    top: 14%;
+  }
+  .choice-container .home-consultation {
+    top: 26.5%;
+    left: 4%;
+  }
+  .choice-container .home-affordable {
+    top: 63%;
+    right: 4%;
+    left: auto;
+  }
+  .choice-container .home-guaranteed {
+    bottom: 15%;
+    top: auto;
+    left: 4%;
+    right: auto;
+  }
+  .choice-container .home-support {
+    bottom: 2%;
+    top: auto;
+    right: 4%;
+    left: auto;
+  }
+  @-webkit-keyframes circle562 {
+    0% {
+      top: 45%;
+      left: 14%;
+    }
+    50% {
+      top: 51%;
+      left: 14.5%;
+    }
+    100% {
+      top: 45%;
+      left: 14%;
+    }
+  }
+  @keyframes circle562 {
+    0% {
+      top: 45%;
+      left: 14%;
+    }
+    50% {
+      top: 51%;
+      left: 14.5%;
+    }
+    100% {
+      top: 45%;
+      left: 14%;
+    }
+  }
+  .home-typewriter .home-best {
+    font-size: 0.6rem;
+  }
+  .home-typewriter .home-best span {
+    font-size: 0.6rem;
+    margin-left: 1px;
+  }
+  .home-footer .home-footer-info {
+    padding: 1% 5%;
+  }
+  .home-footer .home-footer-info .home-logo-image {
+    margin-bottom: 0;
+  }
+  .home-footer .home-services .home-services-head {
+    margin-bottom: 20px;
+  }
+  .home-footer .home-contact-us .home-contact-head {
+    margin-bottom: 20px;
+  }
+  .home-footer .home-contact-us .home-contacts {
+    margin-bottom: 10px;
+  }
+  .home-footer .home-contact-us .home-contacts .home-phone {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .choice-container {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .choice-container .choice-head {
+    padding: 10px;
+  }
+  .choice-container .home-container {
+    padding-top: 110%;
+    padding-bottom: 110%;
+    text-align: center;
+  }
+  .choice-container .circular-image {
+    width: 60vw;
+    height: 30vh;
+  }
+  .choice-container .home-number {
+    top: 15%;
+  }
+  .choice-container .home-consultation {
+    top: 28%;
+  }
+  .choice-container .home-affordable {
+    top: 62%;
+  }
+  .choice-container .home-guaranteed {
+    bottom: 13%;
+  }
+  .choice-container .home-support {
+    bottom: 0%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .choice-container .home-container {
+    padding-top: 170%;
+    padding-bottom: 170%;
+  }
+  .choice-container .circular-image {
+    width: 70vw;
+    height: 30vh;
+  }
+  .choice-container .rotate-image {
+    width: 14vw;
+    height: 6vh;
+    left: 8%;
+    top: 45%;
+    -webkit-animation: circle380 10s infinite linear;
+            animation: circle380 10s infinite linear;
+  }
+  .choice-container .home-consultation {
+    top: 30%;
+  }
+  .choice-container .home-affordable {
+    top: 61%;
+  }
+  .choice-container .home-guaranteed {
+    bottom: 14%;
+  }
+  .choice-container .home-support {
+    bottom: 1.5%;
+  }
+  @-webkit-keyframes circle380 {
+    0% {
+      top: 45%;
+      left: 8%;
+    }
+    50% {
+      top: 51%;
+      left: 8.5%;
+    }
+    100% {
+      top: 45%;
+      left: 8%;
+    }
+  }
+  @keyframes circle380 {
+    0% {
+      top: 45%;
+      left: 8%;
+    }
+    50% {
+      top: 51%;
+      left: 8.5%;
+    }
+    100% {
+      top: 45%;
+      left: 8%;
+    }
+  }
+}
+/*# sourceMappingURL=Home.css.map */

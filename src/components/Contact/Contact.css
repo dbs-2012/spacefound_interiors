@@ -46,4 +46,29 @@
 }
 .contact-form-container .consultant-form .submit input:hover {
   background-color: #085f84;
+}
+
+@media only screen and (max-width: 1140px) {
+  .contact-form-container .consultant-form {
+    width: 51%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-form-container {
+    padding: 3rem 0;
+  }
+  .contact-form-container .consultant-form {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 562px) {
+  .contact-form-container {
+    padding: 0;
+  }
+  .contact-form-container .consultant-form {
+    width: 100%;
+  }
+  .contact-form-container .consultant-form .form-head {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=Contact.css.map */
