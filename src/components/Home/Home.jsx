@@ -35,7 +35,7 @@ const Home = () => {
 
                 <div className='text'>A home designed so elegantly, you'll love the space you find.</div>
                 <div className="small-text">Transform your home or office space into an elegant and functional oasis with our expert interior design services. We tailor solutions to your preferences.</div>
-                <Link to='/residential'><button className='btn'>Learn More</button></Link>
+                <Link to='/spacefound_interiors/residential'><button className='btn'>Learn More</button></Link>
             </div>
 
             <div className="info">
@@ -81,27 +81,27 @@ const Home = () => {
                 </div>
                 <div className="galleries">
                     <div className="gallery-1">
-                        <Link to="/living-room"><img src={Image9} alt="Living Room" id='living-room' />
+                        <Link to="/spacefound_interiors/living-room"><img src={Image9} alt="Living Room" id='living-room' />
                             <div id="living-head"><p>Living Room</p></div></Link>
                     </div>
                     <div className="gallery-2">
-                        <Link to="/bedroom"><img src={Image10} alt="Master Bedroom" id='master-bedroom' />
+                        <Link to="/spacefound_interiors/bedroom"><img src={Image10} alt="Master Bedroom" id='master-bedroom' />
                             <div id="master-head"><p>Master Bedroom</p></div></Link>
                     </div>
                     <div className="gallery-3">
-                        <Link to="/balcony"><img src={Image11} alt="Balcony" id='balcony' />
+                        <Link to="/spacefound_interiors/balcony"><img src={Image11} alt="Balcony" id='balcony' />
                             <div id="balcony-head"><p>Balcony</p></div></Link>
                     </div>
                     <div className="gallery-4">
-                        <Link to="/bathroom"><img src={Image12} alt="Bathroom" id='bathroom' />
+                        <Link to="/spacefound_interiors/bathroom"><img src={Image12} alt="Bathroom" id='bathroom' />
                             <div id="bathroom-head"><p>Bathroom</p></div></Link>
                     </div>
                     <div className="gallery-5">
-                        <Link to="/kitchen"><img src={Image13} alt="Kitchen" id='kitchen' />
+                        <Link to="/spacefound_interiors/kitchen"><img src={Image13} alt="Kitchen" id='kitchen' />
                             <div id="kitchen-head"><p>Kitchen</p></div></Link>
                     </div>
                     <div className="gallery-6">
-                        <Link to="/residential"><img src={Image14} alt="Wardrobe" id='wardrobe' />
+                        <Link to="/spacefound_interiors/residential"><img src={Image14} alt="Wardrobe" id='wardrobe' />
                             <div id="wardrobe-head"><p>Wardrobe</p></div></Link>
                     </div>
                 </div>
@@ -166,11 +166,11 @@ const Home = () => {
                     <div className="home-services-head"><h3>SERVICES</h3></div>
                     <p>
                         <ul>
-                            <li><Link to="/residential">Residential Interior</Link></li>
-                            <li><Link to="/living-room">Living Room Interior</Link></li>
-                            <li><Link to="/kitchen">Kitchen Interior</Link></li>
-                            <li><Link to="/bathroom">Bathroom Interior</Link></li>
-                            <li><Link to="/balcony">Balcony Decor</Link></li>
+                            <li><Link to="/spacefound_interiors/residential">Residential Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/living-room">Living Room Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/kitchen">Kitchen Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/bathroom">Bathroom Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/balcony">Balcony Decor</Link></li>
                         </ul>
                     </p>
                 </div>

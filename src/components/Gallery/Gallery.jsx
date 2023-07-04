@@ -46,16 +46,16 @@ const Gallery = () => {
                         <p>Design your home with passion.</p>
                     </div>
                     <div className="img-1">
-                        <img src={Image} alt="" />
+                        <img src={Image} alt="Bedroom icon" />
                     </div>
                     <div className="img-2">
-                        <img src={Image2} alt="" />
+                        <img src={Image2} alt="Living Room icon" />
                     </div>
                     <div className="img-3">
-                        <img src={Image3} alt="" />
+                        <img src={Image3} alt="Kitchen icon" />
                     </div>
                     <div className="img-4">
-                        <img src={Image11} alt="" />
+                        <img src={Image11} alt="Bathroom icon" />
                     </div>
                     <div className="outerRect">
                         <div className="innerRect">
@@ -108,32 +108,32 @@ const Gallery = () => {
                 </div>
                 <div className="galleries">
                     <div className="gallery-1">
-                        <Link to="/living-room">
+                        <Link to="/spacefound_interiors/living-room">
                             <img src={Image12} alt="Living Room" id='living-room' />
                             <div id="living-head"><p>Living Room</p></div></Link>
                     </div>
                     <div className="gallery-2">
-                        <Link to="/kitchen">
+                        <Link to="/spacefound_interiors/kitchen">
                             <img src={Image13} alt="Kitchen" id='kitchen' />
                             <div id="kitchen-head"><p>Kitchen</p></div></Link>
                     </div>
                     <div className="gallery-3">
-                        <Link to="/bedroom">
+                        <Link to="/spacefound_interiors/bedroom">
                             <img src={Image14} alt="Master Bedroom" id='master' />
                             <div id="master-head"><p>Master Bedroom</p></div></Link>
                     </div>
                     <div className="gallery-4">
-                        <Link to="/bathroom">
+                        <Link to="/spacefound_interiors/bathroom">
                             <img src={Image15} alt="Bathroom" id='bathroom' />
                             <div id="bath-head"><p>Bathroom</p></div></Link>
                     </div>
                     <div className="gallery-5">
-                        <Link to="/residential">
+                        <Link to="/spacefound_interiors/residential">
                             <img src={Image16} alt="Wardrobe" id='wardrobe' />
                             <div id="wardrobe-head"><p>Wardrobe</p></div></Link>
                     </div>
                     <div className="gallery-6">
-                        <Link to="/balcony">
+                        <Link to="/spacefound_interiors/balcony">
                             <img src={Image17} alt="Balcony" id='gallery-balcony' />
                             <div id="balcony-head"><p>Balcony</p></div></Link>
                     </div>
@@ -160,7 +160,7 @@ const Gallery = () => {
                         <p>Receive personalized quotes as per your requirements and floor plan.</p>
                     </div>
                     <div className="consultation-btn">
-                        <Link to="/contact-us"><button>Book Now</button></Link>
+                        <Link to="/spacefound_interiors/contact-us"><button>Book Now</button></Link>
                     </div>
                 </div>
             </div>
@@ -254,11 +254,11 @@ const Gallery = () => {
                     <div className="gallery-services-head"><h3>SERVICES</h3></div>
                     <p>
                         <ul>
-                            <li><Link to="/residential">Residential Interior</Link></li>
-                            <li><Link to="/living-room">Living Room Interior</Link></li>
-                            <li><Link to="/kitchen">Kitchen Interior</Link></li>
-                            <li><Link to="/bathroom">Bathroom Interior</Link></li>
-                            <li><Link to="/balcony">Balcony Decor</Link></li>
+                            <li><Link to="/spacefound_interiors/residential">Residential Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/living-room">Living Room Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/kitchen">Kitchen Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/bathroom">Bathroom Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/balcony">Balcony Decor</Link></li>
                         </ul>
                     </p>
                 </div>

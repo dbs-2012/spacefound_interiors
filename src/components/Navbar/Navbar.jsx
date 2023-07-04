@@ -10,18 +10,23 @@ const Navbar = () => {
     const [displaydropdown, setDisplaydropdown] = useState(false);
     const [style, setStyle] = useState(false)
 
+    const changeStyle = () => {
+        setStyle(!style);
+        setDisplaydropdown(!displaydropdown);
+    }
+
     return (
         <div className='nav'>
             <div className='logo'>
                 <img src={Logo} alt="" id='logo-image' />
-                <Link to="/">
+                <Link to="/spacefound_interiors">
                     <span>SPACEFOUND INTERIORS</span>
                 </Link>
             </div>
             <div className="others">
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/gallery">Gallery</Link></li>
+                    <li><Link to="/spacefound_interiors">Home</Link></li>
+                    <li><Link to="/spacefound_interiors/gallery">Gallery</Link></li>
                     <li><a href="#about">About</a></li>
                     <li><div class="nav-dropdown">
                         <button type='button' className="nav-dropbtn" onClick={() => setDisplaydropdown(!displaydropdown)}>Services
@@ -29,36 +34,36 @@ const Navbar = () => {
                         </button>
                         {displaydropdown &&
                         <div class="nav-dropdown-content">
-                            <Link to="/residential">Residential Interior</Link>
-                            <Link to="/living-room">Living Room Interior</Link>
-                            <Link to="/kitchen">Kitchen Interior</Link>
-                            <Link to="/bathroom">Bathroom Interior</Link>
-                            <Link to="/balcony">Balcony Decor</Link>
+                            <button onClick={() => setDisplaydropdown(!displaydropdown)}><Link to="/spacefound_interiors/residential">Residential Interior</Link></button>
+                            <button onClick={() => setDisplaydropdown(!displaydropdown)}><Link to="/spacefound_interiors/living-room">Living Room Interior</Link></button>
+                            <button onClick={() => setDisplaydropdown(!displaydropdown)}><Link to="/spacefound_interiors/kitchen">Kitchen Interior</Link></button>
+                            <button onClick={() => setDisplaydropdown(!displaydropdown)}><Link to="/spacefound_interiors/bathroom">Bathroom Interior</Link></button>
+                            <button onClick={() => setDisplaydropdown(!displaydropdown)}><Link to="/spacefound_interiors/balcony">Balcony Decor</Link></button>
                         </div>}
                     </div></li>
-                    <li><Link to="/contact-us">Contact Us</Link></li>
+                    <li><Link to="/spacefound_interiors/contact-us">Contact Us</Link></li>
                 </ul>
             </div>
             {style &&
             <div className="others-display-list">
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/gallery">Gallery</Link></li>
-                    <li><a href="#about">About</a></li>
-                    <li><div class="nav-dropdown">
+                    <li><button onClick={() => setStyle(!style)}><Link to="/spacefound_interiors">Home</Link></button></li>
+                    <li><button onClick={() => setStyle(!style)}><Link to="/spacefound_interiors/gallery">Gallery</Link></button></li>
+                    <li><button onClick={() => setStyle(!style)}><a href="#about">About</a></button></li>
+                    <li><button><div class="nav-dropdown">
                         <button type='button' className="nav-dropbtn" onClick={() => setDisplaydropdown(!displaydropdown)}>Services
                             <span className='arrow'><AiFillCaretDown /></span>
                         </button>
                         {displaydropdown &&
                         <div class="nav-dropdown-content">
-                            <Link to="/residential">Residential Interior</Link>
-                            <Link to="/living-room">Living Room Interior</Link>
-                            <Link to="/kitchen">Kitchen Interior</Link>
-                            <Link to="/bathroom">Bathroom Interior</Link>
-                            <Link to="/balcony">Balcony Decor</Link>
+                            <button onClick={changeStyle}><Link to="/spacefound_interiors/residential">Residential Interior</Link></button>
+                            <button onClick={changeStyle}><Link to="/spacefound_interiors/living-room">Living Room Interior</Link></button>
+                            <button onClick={changeStyle}><Link to="/spacefound_interiors/kitchen">Kitchen Interior</Link></button>
+                            <button onClick={changeStyle}><Link to="/spacefound_interiors/bathroom">Bathroom Interior</Link></button>
+                            <button onClick={changeStyle}><Link to="/spacefound_interiors/balcony">Balcony Decor</Link></button>
                         </div>}
-                    </div></li>
-                    <li><Link to="/contact-us">Contact Us</Link></li>
+                    </div></button></li>
+                    <li><button onClick={() => setStyle(!style)}><Link to="/spacefound_interiors/contact-us">Contact Us</Link></button></li>
                 </ul>
             </div>}
             <button type='button' id='checkbars' className="nav-bars" onClick={() => setStyle(!style)}><VscThreeBars /></button>

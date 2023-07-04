@@ -138,11 +138,11 @@ const Balcony = () => {
                     <div className="services-services-head"><h3>SERVICES</h3></div>
                     <p>
                         <ul>
-                            <li><Link to="/residential">Residential Interior</Link></li>
-                            <li><Link to="/living-room">Living Room Interior</Link></li>
-                            <li><Link to="/kitchen">Kitchen Interior</Link></li>
-                            <li><Link to="/bathroom">Bathroom Interior</Link></li>
-                            <li><Link to="/balcony">Balcony Decor</Link></li>
+                            <li><Link to="/spacefound_interiors/residential">Residential Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/living-room">Living Room Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/kitchen">Kitchen Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/bathroom">Bathroom Interior</Link></li>
+                            <li><Link to="/spacefound_interiors/balcony">Balcony Decor</Link></li>
                         </ul>
                     </p>
                 </div>

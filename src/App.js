@@ -17,14 +17,14 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/residential" element={<Residential />} />
-          <Route path="/living-room" element={<LivingRoom />} />
-          <Route path="/kitchen" element={<Kitchen />} />
-          <Route path="/bathroom" element={<Bathroom />} />
-          <Route path="/balcony" element={<Balcony />} />
-          <Route path="/contact-us" element={<Contact />} />
+          <Route path="/spacefound_interiors" element={<Home />} />
+          <Route path="/spacefound_interiors/gallery" element={<Gallery />} />
+          <Route path="/spacefound_interiors/residential" element={<Residential />} />
+          <Route path="/spacefound_interiors/living-room" element={<LivingRoom />} />
+          <Route path="/spacefound_interiors/kitchen" element={<Kitchen />} />
+          <Route path="/spacefound_interiors/bathroom" element={<Bathroom />} />
+          <Route path="/spacefound_interiors/balcony" element={<Balcony />} />
+          <Route path="/spacefound_interiors/contact-us" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </>
