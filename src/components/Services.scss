@@ -133,7 +133,6 @@
         width: 100%;
 
         span {
-            margin-left: 3px;
             font-size: 1.9rem;
             font-family: 'Red Hat Display';
             font-weight: 700;
@@ -171,7 +170,7 @@
     }
 
     .services-services {
-        width: 20%;
+        width: 15%;
         padding: 6% 1% 5% 1%;
 
         .services-services-head {
@@ -204,8 +203,8 @@
     }
 
     .services-contact-us {
-        width: 25%;
-        padding: 6% 1% 5% 1%;
+        width: 30%;
+        padding: 6% 0% 5% 2%;
 
         .services-contact-head {
             text-align: center;
@@ -227,6 +226,12 @@
             }
 
             .services-phone {
+                margin-right: 15px;
+                margin-top: 5px;
+            }
+
+            .services-email{
+                font-size: 1.3rem;
                 margin-right: 15px;
                 margin-top: 5px;
             }
@@ -339,6 +344,10 @@
             .services-contacts {
                 margin-left: 5px;
 
+                .services-email{
+                    font-size: 1.2rem;
+                }
+
                 p {
                     font-size: 1rem;
                 }
@@ -437,6 +446,11 @@
                 .services-phone{
                     margin-left: 5px;
                 }
+
+                .services-email{
+                    margin-left: 3px;
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -504,6 +518,7 @@
     }
 
     .services-footer{
+        font-size: 0.9rem;
 
         .services-footer-info{
             padding: 1% 5%;
@@ -531,6 +546,14 @@
 
                 .services-phone{
                     margin-left: 0;
+                }
+
+                .services-email{
+                    margin-left: 0;
+                }
+                
+                p{
+                    font-size: 0.9rem;
                 }
             }
         }

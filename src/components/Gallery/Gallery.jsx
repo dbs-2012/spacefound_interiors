@@ -6,9 +6,6 @@ import { PiNumberCircleThreeBold } from "react-icons/pi";
 import { PiNumberCircleFourBold } from "react-icons/pi";
 import { PiNumberCircleFiveBold } from "react-icons/pi";
 import { PiNumberCircleSixBold } from "react-icons/pi";
-import { FaLocationDot } from 'react-icons/fa6'
-import { FaMobileAlt } from 'react-icons/fa'
-import { Typewriter } from 'react-simple-typewriter'
 import Image from '../../images/Gallery/bedroom.png'
 import Image2 from '../../images/Gallery/living-room.png'
 import Image3 from '../../images/Gallery/kitchen.png'
@@ -34,8 +31,8 @@ import Image22 from '../../images/Gallery/step-3.jpg'
 import Image23 from '../../images/Gallery/step-4.png'
 import Image24 from '../../images/Gallery/step-5.png'
 import Image25 from '../../images/Gallery/step-6.png'
-import Image26 from '../../images/logo.png'
 import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 const Gallery = () => {
     return (
@@ -228,52 +225,7 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
-
-            <div className="gallery-typewriter">
-                <div className="gallery-best">WE ARE THE "
-                    <span>
-                        <Typewriter
-                            words={['BEST RESIDENTIAL INTERIOR DESIGNERS IN BANGALORE', 'BEST SPACE SAVING INTERIOR DESIGNERS IN BANGALORE']}
-                            loop={false}
-                            cursor
-                            cursorStyle='|'
-                            typeSpeed={70}
-                            deleteSpeed={50}
-                            delaySpeed={1000}
-                        />
-                    </span> "
-                </div>
-            </div>
-            <div className="gallery-footer">
-                <div className="gallery-footer-info">
-                    <div className="gallery-logo-image">
-                        <img src={Image26} alt="logo" /></div>
-                    <p>Spacefound Interiors is an independent interior design consultancy and one-stop interior design solution with years of professional experience on projects for residential and commercial interior designs and decorators.</p>
-                </div>
-                <div className="gallery-services">
-                    <div className="gallery-services-head"><h3>SERVICES</h3></div>
-                    <p>
-                        <ul>
-                            <li><Link to="/spacefound_interiors/residential">Residential Interior</Link></li>
-                            <li><Link to="/spacefound_interiors/living-room">Living Room Interior</Link></li>
-                            <li><Link to="/spacefound_interiors/kitchen">Kitchen Interior</Link></li>
-                            <li><Link to="/spacefound_interiors/bathroom">Bathroom Interior</Link></li>
-                            <li><Link to="/spacefound_interiors/balcony">Balcony Decor</Link></li>
-                        </ul>
-                    </p>
-                </div>
-                <div className="gallery-contact-us">
-                    <div className="gallery-contact-head"><h3>CONTACT US</h3></div>
-                    <div className="gallery-contacts">
-                        <FaLocationDot className='gallery-address' />
-                        <p>Address: 64/2, TNT Cresent, Thanisandra Main Tech Park, Above ICICI Bank, Bangalore, Karnataka 560077</p>
-                    </div>
-                    <div className="gallery-contacts">
-                        <FaMobileAlt className='gallery-phone' />
-                        <p>Mobile: +91 9353301503</p>
-                    </div>
-                </div>
-            </div>
+            <Footer />
         </>
     )
 }

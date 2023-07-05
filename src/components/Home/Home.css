@@ -607,7 +607,7 @@ div#slider .btn:hover {
   font-weight: 500;
 }
 .home-footer .home-services {
-  width: 20%;
+  width: 15%;
   padding: 6% 1% 5% 1%;
 }
 .home-footer .home-services .home-services-head {
@@ -634,8 +634,8 @@ div#slider .btn:hover {
   color: #044662;
 }
 .home-footer .home-contact-us {
-  width: 25%;
-  padding: 6% 1% 5% 1%;
+  width: 30%;
+  padding: 6% 0% 5% 2%;
 }
 .home-footer .home-contact-us .home-contact-head {
   text-align: center;
@@ -655,6 +655,11 @@ div#slider .btn:hover {
   margin-top: 5px;
 }
 .home-footer .home-contact-us .home-contacts .home-phone {
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.home-footer .home-contact-us .home-contacts .home-email {
+  font-size: 1.3rem;
   margin-right: 15px;
   margin-top: 5px;
 }
@@ -840,6 +845,9 @@ div#slider .btn:hover {
   }
   .home-footer .home-contact-us .home-contacts {
     margin-left: 5px;
+  }
+  .home-footer .home-contact-us .home-contacts .home-email {
+    font-size: 1.2rem;
   }
   .home-footer .home-contact-us .home-contacts p {
     font-size: 1rem;
@@ -1062,6 +1070,10 @@ div#slider .btn:hover {
   .home-footer .home-contact-us .home-contacts .home-phone {
     margin-left: 5px;
   }
+  .home-footer .home-contact-us .home-contacts .home-email {
+    margin-left: 3px;
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width: 562px) {
   div#slider figure img {
@@ -1261,6 +1273,9 @@ div#slider .btn:hover {
     margin-bottom: 10px;
   }
   .home-footer .home-contact-us .home-contacts .home-phone {
+    margin-left: 0;
+  }
+  .home-footer .home-contact-us .home-contacts .home-email {
     margin-left: 0;
   }
 }

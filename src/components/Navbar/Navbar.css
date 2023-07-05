@@ -186,7 +186,7 @@
     margin: 0;
   }
   .nav .others-display-list ul li button {
-    padding: 0.5rem;
+    padding: 0.2rem 0.5rem;
     font-size: 1rem;
     border: none;
     outline: none;
@@ -279,7 +279,7 @@
     width: 45px;
   }
   .nav .others-display-list ul li {
-    padding: 0.2rem 0.1rem;
+    padding: 0.1rem;
   }
   .nav .others-display-list ul li button {
     font-size: 0.9rem;
@@ -295,7 +295,7 @@
     font-size: 0.9rem;
   }
   .nav .others-display-list ul li .nav-dropdown .nav-dropdown-content button a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

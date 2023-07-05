@@ -10,7 +10,6 @@ import Bathroom from './components/Bathroom/Bathroom';
 import Balcony from './components/Balcony/Balcony';
 import Contact from './components/Contact/Contact';
 
-
 function App() {
   return (
     <>

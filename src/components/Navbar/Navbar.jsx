@@ -27,7 +27,6 @@ const Navbar = () => {
                 <ul>
                     <li><Link to="/spacefound_interiors">Home</Link></li>
                     <li><Link to="/spacefound_interiors/gallery">Gallery</Link></li>
-                    <li><a href="#about">About</a></li>
                     <li><div class="nav-dropdown">
                         <button type='button' className="nav-dropbtn" onClick={() => setDisplaydropdown(!displaydropdown)}>Services
                             <span className='arrow'><AiFillCaretDown /></span>
@@ -49,7 +48,6 @@ const Navbar = () => {
                 <ul>
                     <li><button onClick={() => setStyle(!style)}><Link to="/spacefound_interiors">Home</Link></button></li>
                     <li><button onClick={() => setStyle(!style)}><Link to="/spacefound_interiors/gallery">Gallery</Link></button></li>
-                    <li><button onClick={() => setStyle(!style)}><a href="#about">About</a></button></li>
                     <li><button><div class="nav-dropdown">
                         <button type='button' className="nav-dropbtn" onClick={() => setDisplaydropdown(!displaydropdown)}>Services
                             <span className='arrow'><AiFillCaretDown /></span>

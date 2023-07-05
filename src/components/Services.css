@@ -114,7 +114,6 @@
   width: 100%;
 }
 .services-typewriter .services-best span {
-  margin-left: 3px;
   font-size: 1.9rem;
   font-family: "Red Hat Display";
   font-weight: 700;
@@ -146,7 +145,7 @@
   font-weight: 500;
 }
 .services-footer .services-services {
-  width: 20%;
+  width: 15%;
   padding: 6% 1% 5% 1%;
 }
 .services-footer .services-services .services-services-head {
@@ -173,8 +172,8 @@
   color: #044662;
 }
 .services-footer .services-contact-us {
-  width: 25%;
-  padding: 6% 1% 5% 1%;
+  width: 30%;
+  padding: 6% 0% 5% 2%;
 }
 .services-footer .services-contact-us .services-contact-head {
   text-align: center;
@@ -194,6 +193,11 @@
   margin-top: 5px;
 }
 .services-footer .services-contact-us .services-contacts .services-phone {
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.services-footer .services-contact-us .services-contacts .services-email {
+  font-size: 1.3rem;
   margin-right: 15px;
   margin-top: 5px;
 }
@@ -280,6 +284,9 @@
   .services-footer .services-contact-us .services-contacts {
     margin-left: 5px;
   }
+  .services-footer .services-contact-us .services-contacts .services-email {
+    font-size: 1.2rem;
+  }
   .services-footer .services-contact-us .services-contacts p {
     font-size: 1rem;
   }
@@ -346,6 +353,10 @@
   .services-footer .services-contact-us .services-contacts .services-phone {
     margin-left: 5px;
   }
+  .services-footer .services-contact-us .services-contacts .services-email {
+    margin-left: 3px;
+    font-size: 1rem;
+  }
   .rec.rec-arrow-left {
     margin-left: 5px;
   }
@@ -389,6 +400,9 @@
     font-size: 0.6rem;
     margin-left: 1px;
   }
+  .services-footer {
+    font-size: 0.9rem;
+  }
   .services-footer .services-footer-info {
     padding: 1% 5%;
   }
@@ -407,4 +421,11 @@
   .services-footer .services-contact-us .services-contacts .services-phone {
     margin-left: 0;
   }
-}/*# sourceMappingURL=Services.css.map */
+  .services-footer .services-contact-us .services-contacts .services-email {
+    margin-left: 0;
+  }
+  .services-footer .services-contact-us .services-contacts p {
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=Services.css.map */

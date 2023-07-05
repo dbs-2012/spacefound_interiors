@@ -20,6 +20,7 @@ import Image13 from '../../images/Home/gallery-5.jpg'
 import Image14 from '../../images/Home/gallery-6.jpg'
 import Image15 from '../../images/Home/why.jpg'
 import Image16 from '../../images/logo.png'
+import { MdEmail } from 'react-icons/md'
 
 const Home = () => {
     return (
@@ -183,6 +184,10 @@ const Home = () => {
                     <div className="home-contacts">
                         <FaMobileAlt className='home-phone' />
                         <p>Mobile: +91 9353301503</p>
+                    </div>
+                    <div className="home-contacts">
+                        <MdEmail className='home-email' />
+                        <p>Email: oasissyed59@gmail.com</p>
                     </div>
                 </div>
             </div>
