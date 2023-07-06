@@ -106,8 +106,7 @@
   width: 500%;
   margin: 0;
   left: 0;
-  -webkit-animation: 10s slidy infinite;
-          animation: 10s slidy infinite;
+  animation: 10s slidy infinite;
 }
 .gallery-container .display .outerRect .innerRect figure img {
   width: 32.5vw;
@@ -155,36 +154,6 @@
 }
 .gallery-container .display .consultant-form .submit input:hover {
   background-color: #085f84;
-}
-
-@-webkit-keyframes slidy {
-  0% {
-    left: 0%;
-  }
-  20% {
-    left: 0%;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
 }
 
 @keyframes slidy {
@@ -1032,5 +1001,4 @@
   .gallery-steps-container .gallery-steps .steps .steps-text p {
     width: 130%;
   }
-}
-/*# sourceMappingURL=Gallery.css.map */
+}/*# sourceMappingURL=Gallery.css.map */

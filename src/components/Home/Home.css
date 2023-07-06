@@ -1,33 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Aref+Ruqaa+Ink:wght@700&family=Lato:ital,wght@0,400;1,100;1,300&family=Lobster+Two&family=Montserrat:wght@400;500&family=Pathway+Extreme:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
-@-webkit-keyframes slidy {
-  0% {
-    left: 0%;
-  }
-  20% {
-    left: 0%;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
-}
 @keyframes slidy {
   0% {
     left: 0%;
@@ -67,8 +38,7 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  -webkit-animation: 10s slidy infinite;
-          animation: 10s slidy infinite;
+  animation: 10s slidy infinite;
   opacity: 0.7;
 }
 div#slider figure img {
@@ -450,8 +420,7 @@ div#slider .btn:hover {
   position: absolute;
   left: 32%;
   top: 28%;
-  -webkit-animation: circle 10s infinite linear;
-          animation: circle 10s infinite linear;
+  animation: circle 10s infinite linear;
 }
 .choice-container .light-background {
   width: 18vw;
@@ -526,21 +495,6 @@ div#slider .btn:hover {
   position: absolute;
   top: 64%;
   right: 10%;
-}
-
-@-webkit-keyframes circle {
-  0% {
-    top: 28%;
-    left: 32%;
-  }
-  50% {
-    top: 50%;
-    left: 32.5%;
-  }
-  100% {
-    top: 25%;
-    left: 32%;
-  }
 }
 
 @keyframes circle {
@@ -679,8 +633,7 @@ div#slider .btn:hover {
     height: 11vh;
     top: 30%;
     left: 30%;
-    -webkit-animation: circle1230 10s infinite linear;
-            animation: circle1230 10s infinite linear;
+    animation: circle1230 10s infinite linear;
   }
   .choice-container .light-background {
     width: 25vw;
@@ -707,20 +660,6 @@ div#slider .btn:hover {
   .choice-container .home-support {
     right: 5%;
     top: 74%;
-  }
-  @-webkit-keyframes circle1230 {
-    0% {
-      top: 30%;
-      left: 30%;
-    }
-    50% {
-      top: 50%;
-      left: 30.5%;
-    }
-    100% {
-      top: 30%;
-      left: 30%;
-    }
   }
   @keyframes circle1230 {
     0% {
@@ -867,8 +806,7 @@ div#slider .btn:hover {
     height: 10vh;
     top: 40%;
     left: 27%;
-    -webkit-animation: circle940 10s infinite linear;
-            animation: circle940 10s infinite linear;
+    animation: circle940 10s infinite linear;
   }
   .choice-container .light-background {
     width: 27vw;
@@ -877,20 +815,6 @@ div#slider .btn:hover {
   .choice-container .dark-background {
     width: 27vw;
     box-shadow: 1px 1px 5px 1px rgb(184, 184, 184);
-  }
-  @-webkit-keyframes circle940 {
-    0% {
-      top: 40%;
-      left: 27%;
-    }
-    50% {
-      top: 60%;
-      left: 27.5%;
-    }
-    100% {
-      top: 40%;
-      left: 27%;
-    }
   }
   @keyframes circle940 {
     0% {
@@ -965,8 +889,7 @@ div#slider .btn:hover {
     left: 48%;
     width: 10vw;
     height: 8vh;
-    -webkit-animation: circle768 10s infinite linear;
-            animation: circle768 10s infinite linear;
+    animation: circle768 10s infinite linear;
   }
   .choice-container .light-background {
     width: 43vw;
@@ -1004,20 +927,6 @@ div#slider .btn:hover {
     top: auto;
     right: 5%;
     left: auto;
-  }
-  @-webkit-keyframes circle768 {
-    0% {
-      top: 40%;
-      left: 48%;
-    }
-    50% {
-      top: 54%;
-      left: 48.5%;
-    }
-    100% {
-      top: 40%;
-      left: 48%;
-    }
   }
   @keyframes circle768 {
     0% {
@@ -1180,8 +1089,7 @@ div#slider .btn:hover {
     height: 7vh;
     left: 14%;
     top: 45%;
-    -webkit-animation: circle562 10s infinite linear;
-            animation: circle562 10s infinite linear;
+    animation: circle562 10s infinite linear;
   }
   .choice-container .light-background {
     width: 85vw;
@@ -1221,20 +1129,6 @@ div#slider .btn:hover {
     top: auto;
     right: 4%;
     left: auto;
-  }
-  @-webkit-keyframes circle562 {
-    0% {
-      top: 45%;
-      left: 14%;
-    }
-    50% {
-      top: 51%;
-      left: 14.5%;
-    }
-    100% {
-      top: 45%;
-      left: 14%;
-    }
   }
   @keyframes circle562 {
     0% {
@@ -1326,8 +1220,7 @@ div#slider .btn:hover {
     height: 6vh;
     left: 8%;
     top: 45%;
-    -webkit-animation: circle380 10s infinite linear;
-            animation: circle380 10s infinite linear;
+    animation: circle380 10s infinite linear;
   }
   .choice-container .home-consultation {
     top: 30%;
@@ -1340,20 +1233,6 @@ div#slider .btn:hover {
   }
   .choice-container .home-support {
     bottom: 1.5%;
-  }
-  @-webkit-keyframes circle380 {
-    0% {
-      top: 45%;
-      left: 8%;
-    }
-    50% {
-      top: 51%;
-      left: 8.5%;
-    }
-    100% {
-      top: 45%;
-      left: 8%;
-    }
   }
   @keyframes circle380 {
     0% {
@@ -1369,5 +1248,4 @@ div#slider .btn:hover {
       left: 8%;
     }
   }
-}
-/*# sourceMappingURL=Home.css.map */
+}/*# sourceMappingURL=Home.css.map */
